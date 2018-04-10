@@ -1,0 +1,44 @@
+{{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}{{config.company}}{{/text.headline}}
+          {{#text.subhead}}{{config.position}}{{/text.subhead}}
+          {{#text.subhead}}{{config.startDate}} to {{config.endDate}}{{/text.subhead}}
+        {{/title.text}}
+      {{/card.title}}
+
+      {{#card.content class="layout-column layout-align-space-between"}}
+        <div class="layout-row">
+            <div class=" layout-column">
+            {{#each config.highlights as |highlight|}}
+                    <div>• {{highlight}}</div>
+            {{/each}}
+            </div>
+            {{#card.media size="xl"}}
+            <div class="card-media">
+            
+            </div>
+            {{/card.media}}
+        </div>
+        {{#card.actions class="layout-row"}}
+          {{#paper-button iconButton=true}}{{paper-icon "favorite"}}{{/paper-button}}
+          {{#paper-button iconButton=true}}{{paper-icon "settings"}}{{/paper-button}}
+          {{#paper-button iconButton=true}}{{paper-icon "share"}}{{/paper-button}}
+        {{/card.actions}}
+      {{/card.content}}
+    {{/paper-card}}
+{{yield}}
+
+{{!-- "company": "Accedian - Analytics Visualization",
+                    "position": "Full Stack Software Developer",
+                    "website": "https://accedian.com/",
+                    "startDate": "2018-01-8",
+                    "endDate": "Present",
+                    "summary": "Worked within a brand new software division of Accedian breaking new ground in netowork data visualization both front and backend.",
+                    "highlights": [
+                        "Used Ember.js to rapidly create and prototype web apps.",
+                        "Align new feature implementation with customer spec.",
+                        "Design and implement efficient Artificial Intelligent algorithm to provide meaningful data analytics",
+                        "Take ownership of Epics and Stories in an agile development environment.",
+                        "Programming experience with GO in a micro service environment using docker."
+                    ] --}}
