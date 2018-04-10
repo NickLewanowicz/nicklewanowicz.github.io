@@ -20154,10 +20154,12 @@ md-fab-speed-dial {
     #education .highlights .icon {
       margin: 0 0 1rem 0; }
 
-#projects a {
-  color: black; }
+#projects a:hover .project-tile {
+  -webkit-box-shadow: 10px 10px 100px 0px #888888;
+          box-shadow: 10px 10px 100px 0px #888888; }
 
 #projects .project-tile {
+  color: black;
   border-style: solid;
   -webkit-box-shadow: 10px 10px 60px 0px #888888;
   border-radius: 0.3rem;
