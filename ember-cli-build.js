@@ -8,13 +8,13 @@ module.exports = function(defaults) {
       app: {
         html: 'index.html',
         css: {
-          'app': '/assets/personal-portfolio.css'
+          'app': '/personal-portfolio/assets/personal-portfolio.css'
         },
-        js: '/assets/personal-portfolio.js'
+        js: '/personal-portfolio/assets/personal-portfolio.js'
       },
       vendor: {
-        css: '/assets/vendor.css',
-        js: '/assets/vendor.js'
+        css: '/personal-portfolio/assets/vendor.css',
+        js: '/personal-portfolio/assets/vendor.js'
       }
     }
     // Add options here
