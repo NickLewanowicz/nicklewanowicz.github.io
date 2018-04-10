@@ -175,8 +175,11 @@ $color7: rgb(186, 195, 243);
 }
 
 #projects {
-    a {
-        color: black;
+    a:hover {
+        .project-tile {
+            box-shadow: 10px 10px 100px 0px #888888;
+        }
+        
     }
     .project-tile {
        
@@ -196,11 +199,12 @@ $color7: rgb(186, 195, 243);
             max-width: 5VH;
             max-height: 5VH;
         }
-        
+        color: black;
         border-style: solid;
         -webkit-box-shadow: 10px 10px 60px 0px #888888;
         border-radius: 0.3rem;
         border-width: 0.2rem;
+        
     }
     .project-grid {
         margin: 4rem;
