@@ -4,6 +4,19 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    outputPaths: {
+      app: {
+        html: 'index.html',
+        css: {
+          'app': '/assets/personal-portfolio.css'
+        },
+        js: '/assets/personal-portfolio.js'
+      },
+      vendor: {
+        css: '/assets/vendor.css',
+        js: '/assets/vendor.js'
+      }
+    }
     // Add options here
   });
 
