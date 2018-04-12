@@ -3,11 +3,10 @@
 {{#paper-content class="md-whiteframe-z1 grid-list-demo-responsiveTiles" }}
     {{#paper-grid-list
     class="project-grid"
-    cols="24"
+    cols="27"
     rowHeight="fit"
     gutter="0px" as |grid|}}
     {{#each config as |project i|}}
-        <a href={{project.url}}>
         {{#grid.tile class=(concat "project-tile color" (mod i 7)) colspan=project.col rowspan=project.row}}
             <div class="project-content layout-column layout-align-start">
             <div class="header layout-row">
@@ -18,11 +17,13 @@
                 <p>
                     <b>{{project.tldr}}</b>
                 </p>
-                <i><a href={{project.demo}}>Demo</a></i>
+                {{#if project.demo}}
+                {{#paper-button  href=project.demo raised=true primary=true}}Demo{{/paper-button}}
+                {{/if}}
+                {{#paper-button  href=project.url disabled=(not project.url) primary=true}}Github{{/paper-button}}
             </div>
             </div>
         {{/grid.tile}}
-        </a>
 
     {{/each}}
     {{/paper-grid-list}}

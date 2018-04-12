@@ -235,20 +235,22 @@ export default Route.extend({
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
                     "icon": "Scholarchain.svg",
                     "row": 3,
-                    "col": 4
+                    "col": 6
                 },
                 {
                     "name": "Peg Solitaire Ai",
                     "url": "https://github.com/NickLewanowicz/peg-solitaire-ai",
+                    "demo": "https://nicklewanowicz.github.io/peg-solitaire-ai/",
                     "tldr": "Ai to solve French Peg Solitaire",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "PegAi.svg",
                     "row": 4,
-                    "col": 4
+                    "col": 5
                 },
                 {
                     "name": "Overboard Ai",
                     "url": "https://github.com/NickLewanowicz/overboard-ai",
+                    "demo": "https://nicklewanowicz.github.io/overboard-ai/",
                     "tldr": "MiniMax Ai to compete in Overboard",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "OverboardAi.svg",
@@ -258,6 +260,7 @@ export default Route.extend({
                 {
                     "name": "Reinforced Learning Visualizer Ai",
                     "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
+                    "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
                     "tldr": "Demonstration of Learning Automata in a sandbox",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "LAAi.svg",
@@ -267,6 +270,7 @@ export default Route.extend({
                 {
                     "name": "BetterPassword Manager",
                     "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
+                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
                     "tldr": "Phrase based password research system",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "better-password.svg",

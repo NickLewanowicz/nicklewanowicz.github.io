@@ -14,6 +14,7 @@ $tile4: rgba(238, 238, 238,1);
 $tile5: rgba(255, 133, 120,1);
 $tile6: rgb(210, 203, 255);
 $tile7: rgba(82, 179, 217,1);
+$section1: rgb(102, 250, 220);
 .index {
     position: relative;
     top: 0px;
@@ -157,17 +158,18 @@ $tile7: rgba(82, 179, 217,1);
 }
 
 #education {
-    margin: 4rem 1rem 1rem 1rem ;
+    background-color: $section1;
+    padding: 4rem 1rem 1rem 1rem ;
     .education-card {
         h2, h3, .extras {
             margin: 1rem auto 0 auto;
         }
-        -webkit-box-shadow: 10px 10px 60px 0px #888888;
+        //-webkit-box-shadow: 10px 10px 60px 0px #888888;
         padding: 1rem 2rem 2rem 2rem;
-        border-radius: 0.5rem;
-        border-style: solid;
-        border-color: $color3;
-        border-width: 0.2rem;
+        //border-radius: 0.5rem;
+        //border-style: solid;
+        //border-color: $color3;
+        //border-width: 0.2rem;
         margin-bottom: 5rem;
     }
     .highlights {
@@ -239,7 +241,7 @@ $tile7: rgba(82, 179, 217,1);
         //margin: 2rem;
     }
     md-grid-list {
-        width: 200VH;
+        width: 250VH;
         height: 60VH;
     }
     .scroll-indicator {	
