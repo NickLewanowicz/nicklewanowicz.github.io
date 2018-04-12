@@ -3229,18 +3229,20 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
                     "icon": "Scholarchain.svg",
                     "row": 3,
-                    "col": 4
+                    "col": 6
                 }, {
                     "name": "Peg Solitaire Ai",
                     "url": "https://github.com/NickLewanowicz/peg-solitaire-ai",
+                    "demo": "https://nicklewanowicz.github.io/peg-solitaire-ai/",
                     "tldr": "Ai to solve French Peg Solitaire",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "PegAi.svg",
                     "row": 4,
-                    "col": 4
+                    "col": 5
                 }, {
                     "name": "Overboard Ai",
                     "url": "https://github.com/NickLewanowicz/overboard-ai",
+                    "demo": "https://nicklewanowicz.github.io/overboard-ai/",
                     "tldr": "MiniMax Ai to compete in Overboard",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "OverboardAi.svg",
@@ -3249,6 +3251,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                 }, {
                     "name": "Reinforced Learning Visualizer Ai",
                     "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
+                    "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
                     "tldr": "Demonstration of Learning Automata in a sandbox",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "LAAi.svg",
@@ -3257,6 +3260,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                 }, {
                     "name": "BetterPassword Manager",
                     "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
+                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
                     "tldr": "Phrase based password research system",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "better-password.svg",
@@ -3442,7 +3446,7 @@ define("personal-portfolio/pods/components/my-projects/template", ["exports"], f
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "Pas/n4oR", "block": "{\"symbols\":[\"grid\",\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \\n\"],[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"24\",\"fit\",\"0px\"]],{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"a\"],[10,\"href\",[19,2,[\"url\"]],null],[7],[0,\"\\n\"],[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[[25,\"concat\",[\"project-tile color\",[25,\"mod\",[[19,3,[]],7],null]],null],[19,2,[\"col\"]],[19,2,[\"row\"]]]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n                \"],[6,\"i\"],[7],[6,\"a\"],[10,\"href\",[19,2,[\"demo\"]],null],[7],[0,\"Demo\"],[8],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"        \"],[8],[0,\"\\n\\n\"]],\"parameters\":[2,3]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[6,\"div\"],[9,\"class\",\"scroll-indicator fa fa-chevron-down\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\"],[46]]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,4]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "nr7FxGES", "block": "{\"symbols\":[\"grid\",\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \\n\"],[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"27\",\"fit\",\"0px\"]],{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[[25,\"concat\",[\"project-tile color\",[25,\"mod\",[[19,3,[]],7],null]],null],[19,2,[\"col\"]],[19,2,[\"row\"]]]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n\"],[4,\"if\",[[19,2,[\"demo\"]]],null,{\"statements\":[[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,2,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,2,[\"url\"]],[25,\"not\",[[19,2,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[2,3]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[6,\"div\"],[9,\"class\",\"scroll-indicator fa fa-chevron-down\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\"],[46]]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,4]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-header/component', ['exports'], function (exports) {
   'use strict';
@@ -4157,6 +4161,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+78b2a437"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+fabebbc8"});
 }
 //# sourceMappingURL=personal-portfolio.map

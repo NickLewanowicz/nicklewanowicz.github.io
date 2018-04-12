@@ -20136,14 +20136,10 @@ md-fab-speed-dial {
     margin: 1rem auto 0 auto; }
 
 #education {
-  margin: 4rem 1rem 1rem 1rem; }
+  background-color: #66fadc;
+  padding: 4rem 1rem 1rem 1rem; }
   #education .education-card {
-    -webkit-box-shadow: 10px 10px 60px 0px #888888;
     padding: 1rem 2rem 2rem 2rem;
-    border-radius: 0.5rem;
-    border-style: solid;
-    border-color: #5f5aa2;
-    border-width: 0.2rem;
     margin-bottom: 5rem; }
     #education .education-card h2, #education .education-card h3, #education .education-card .extras {
       margin: 1rem auto 0 auto; }
@@ -20187,7 +20183,7 @@ md-fab-speed-dial {
     #projects .project-tile img {
       max-height: 5VH; }
   #projects md-grid-list {
-    width: 200VH;
+    width: 250VH;
     height: 60VH; }
   #projects .scroll-indicator {
     position: absolute;
