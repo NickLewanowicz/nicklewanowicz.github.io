@@ -1,14 +1,14 @@
 <div id="projects">
-{{#paper-content class="md-whiteframe-z1 grid-list-demo-responsiveTiles" layout-padding=''}}
+{{#paper-content class="md-whiteframe-z1 grid-list-demo-responsiveTiles" }}
     {{#paper-grid-list
     class="project-grid"
-    cols="3 md-8 gt-md-12"
-    rowHeight="4:3 gt-md-1:1"
-    gutter="4px md-8px gt-md-16px" as |grid|}}
+    cols="30"
+    rowHeight="fit"
+    gutter="0px" as |grid|}}
 
-    {{#each config as |project|}}
+    {{#each config as |project i|}}
         <a href={{project.url}}>
-        {{#grid.tile class="project-tile" colspan=(random 2 3) rowspan=(random 2 3)}}
+        {{#grid.tile class="project-tile" colspan=project.col rowspan=project.row}}
             <div class="project-content layout-column layout-align-start">
             <div class="header layout-row">
                 <img src={{project.icon}}>

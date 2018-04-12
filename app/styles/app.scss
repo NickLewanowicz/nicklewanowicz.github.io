@@ -175,16 +175,17 @@ $color7: rgb(186, 195, 243);
 }
 
 #projects {
+    background: $color3;
     a:hover {
         .project-tile {
-            box-shadow: 10px 10px 100px 0px #888888;
+            //box-shadow: 10px 10px 100px 0px #888888;
         }
         
     }
     .project-tile {
        
         .project-content {
-            padding: 2rem;
+            //padding: 2rem;
         }
         h1 {
             margin-top: 1rem;
@@ -200,14 +201,21 @@ $color7: rgb(186, 195, 243);
             max-height: 5VH;
         }
         color: black;
+        background: white;
         border-style: solid;
-        -webkit-box-shadow: 10px 10px 60px 0px #888888;
-        border-radius: 0.3rem;
+        border-color: white;
         border-width: 0.2rem;
+        // -webkit-box-shadow: 10px 10px 60px 0px #888888;
+        // border-radius: 0.3rem;
+        // border-width: 0.2rem;
         
     }
     .project-grid {
-        margin: 2rem;
+        //margin: 2rem;
+    }
+    md-grid-list {
+        width: 200VH;
+        height: 60VH;
     }
 }
 
