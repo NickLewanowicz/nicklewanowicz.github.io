@@ -1,14 +1,14 @@
 <div id="projects">
+    
 {{#paper-content class="md-whiteframe-z1 grid-list-demo-responsiveTiles" }}
     {{#paper-grid-list
     class="project-grid"
-    cols="30"
+    cols="24"
     rowHeight="fit"
     gutter="0px" as |grid|}}
-
     {{#each config as |project i|}}
         <a href={{project.url}}>
-        {{#grid.tile class="project-tile" colspan=project.col rowspan=project.row}}
+        {{#grid.tile class=(concat "project-tile color" (mod i 7)) colspan=project.col rowspan=project.row}}
             <div class="project-content layout-column layout-align-start">
             <div class="header layout-row">
                 <img src={{project.icon}}>
@@ -27,6 +27,7 @@
     {{/each}}
     {{/paper-grid-list}}
 {{/paper-content}}
+<div class="scroll-indicator fa fa-chevron-down">{{paper-icon "keyboard-arrow-right" size=46}}</div>
 </div>
 
 {{yield}}

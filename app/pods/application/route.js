@@ -207,7 +207,7 @@ export default Route.extend({
                     "tldr": "Award Winning CUHacking 2018 web socket based game",
                     "description": "Built using: express, socket.io, d3, Ember.js",
                     "icon": "Trendify.png",
-                    "row": 6,
+                    "row": 10,
                     "col": 8
                 },
                 {
@@ -216,7 +216,7 @@ export default Route.extend({
                     "tldr": "Production ready iOS app to rent parking spaces",
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
                     "icon": "parkspace.png",
-                    "row": 4,
+                    "row": 6,
                     "col": 6
                 },
                 {
@@ -225,8 +225,17 @@ export default Route.extend({
                     "tldr": "Ethereum focused development tool from EthWaterloo 2017",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "typ3.svg",
-                    "row": 2,
+                    "row": 4,
                     "col": 6
+                },
+                {
+                    "name": "Scholarchain",
+                    "url": "https://github.com/NickLewanowicz/Scholarchain",
+                    "tldr": "CUHacking 2017 first attempt at a decentralized application",
+                    "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
+                    "icon": "Scholarchain.svg",
+                    "row": 3,
+                    "col": 4
                 },
                 {
                     "name": "Peg Solitaire Ai",
@@ -234,8 +243,8 @@ export default Route.extend({
                     "tldr": "Ai to solve French Peg Solitaire",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "PegAi.svg",
-                    "row": 2,
-                    "col": 8
+                    "row": 4,
+                    "col": 4
                 },
                 {
                     "name": "Overboard Ai",
@@ -243,7 +252,7 @@ export default Route.extend({
                     "tldr": "MiniMax Ai to compete in Overboard",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "OverboardAi.svg",
-                    "row": 2,
+                    "row": 3,
                     "col": 6
                 },
                 {
@@ -252,7 +261,7 @@ export default Route.extend({
                     "tldr": "Demonstration of Learning Automata in a sandbox",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "LAAi.svg",
-                    "row": 2,
+                    "row": 4,
                     "col": 6
                 },
                 {
@@ -261,8 +270,8 @@ export default Route.extend({
                     "tldr": "Phrase based password research system",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "better-password.svg",
-                    "row": 2,
-                    "col": 4
+                    "row": 3,
+                    "col": 6
                 },
                 {
                     "name": "Extended-LS",
@@ -270,16 +279,7 @@ export default Route.extend({
                     "tldr": "Modification to Ubuntu's LS command",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "extendedLs.svg",
-                    "row": 2,
-                    "col": 4
-                },
-                {
-                    "name": "Scholarchain",
-                    "url": "https://github.com/NickLewanowicz/Scholarchain",
-                    "tldr": "CUHacking 2017 first attempt at a decentralized application",
-                    "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "Scholarchain.svg",
-                    "row": 2,
+                    "row": 3,
                     "col": 4
                 },
             ],
