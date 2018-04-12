@@ -20154,31 +20154,69 @@ md-fab-speed-dial {
     #education .highlights .icon {
       margin: 0 0 1rem 0; }
 
-#projects a:hover .project-tile {
-  -webkit-box-shadow: 10px 10px 100px 0px #888888;
-          box-shadow: 10px 10px 100px 0px #888888; }
+#projects {
+  background: #5f5aa2; }
+  #projects .color0 {
+    background-color: #e4f1fe; }
+  #projects .color1 {
+    background-color: #86e2d5; }
+  #projects .color2 {
+    background-color: #fde3a7; }
+  #projects .color3 {
+    background-color: #eeeeee; }
+  #projects .color4 {
+    background-color: #ff8578; }
+  #projects .color5 {
+    background-color: #d2cbff; }
+  #projects .color6 {
+    background-color: #d2cbff; }
+  #projects .project-tile {
+    color: black; }
+    #projects .project-tile .project-content {
+      margin-left: 2rem;
+      width: 100%; }
+    #projects .project-tile h1 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+    #projects .project-tile p {
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+    #projects .project-tile img {
+      max-height: 5VH; }
+  #projects md-grid-list {
+    width: 200VH;
+    height: 60VH; }
+  #projects .scroll-indicator {
+    position: absolute;
+    left: 50%;
+    font-size: 50px;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite; }
 
-#projects .project-tile {
-  color: black;
-  border-style: solid;
-  -webkit-box-shadow: 10px 10px 60px 0px #888888;
-  border-radius: 0.3rem;
-  border-width: 0.2rem; }
-  #projects .project-tile .project-content {
-    padding: 2rem; }
-  #projects .project-tile h1 {
-    margin-top: 1rem;
-    font-size: 1rem;
-    padding-left: 0.5rem; }
-  #projects .project-tile p {
-    font-size: 1rem;
-    padding-left: 0.5rem; }
-  #projects .project-tile img {
-    max-width: 5VH;
-    max-height: 5VH; }
+@-webkit-keyframes bounce {
+  0% {
+    top: 92%;
+    left: 96%; }
+  50% {
+    top: 92%;
+    left: 97%; }
+  100% {
+    top: 92%;
+    left: 96%; } }
 
-#projects .project-grid {
-  margin: 2rem; }
+@keyframes bounce {
+  0% {
+    top: 92%;
+    left: 96%; }
+  50% {
+    top: 92%;
+    left: 97%; }
+  100% {
+    top: 92%;
+    left: 96%; } }
 
 img {
   max-width: 100%; }

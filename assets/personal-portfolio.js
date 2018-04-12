@@ -3203,55 +3203,73 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "url": "https://github.com/NickLewanowicz/trendify-web",
                     "tldr": "Award Winning CUHacking 2018 web socket based game",
                     "description": "Built using: express, socket.io, d3, Ember.js",
-                    "icon": "Trendify.png"
+                    "icon": "Trendify.png",
+                    "row": 10,
+                    "col": 8
                 }, {
                     "name": "ParkSpace",
                     "url": "https://github.com/NickLewanowicz/ParkSpace",
                     "tldr": "Production ready iOS app to rent parking spaces",
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "parkspace.png"
+                    "icon": "parkspace.png",
+                    "row": 6,
+                    "col": 6
                 }, {
                     "name": "typ3",
                     "url": "https://github.com/MyCryptoHQ/typ3",
                     "tldr": "Ethereum focused development tool from EthWaterloo 2017",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "typ3.svg"
+                    "icon": "typ3.svg",
+                    "row": 4,
+                    "col": 6
                 }, {
                     "name": "Scholarchain",
                     "url": "https://github.com/NickLewanowicz/Scholarchain",
                     "tldr": "CUHacking 2017 first attempt at a decentralized application",
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "Scholarchain.svg"
+                    "icon": "Scholarchain.svg",
+                    "row": 3,
+                    "col": 4
                 }, {
                     "name": "Peg Solitaire Ai",
                     "url": "https://github.com/NickLewanowicz/peg-solitaire-ai",
                     "tldr": "Ai to solve French Peg Solitaire",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "PegAi.svg"
+                    "icon": "PegAi.svg",
+                    "row": 4,
+                    "col": 4
                 }, {
                     "name": "Overboard Ai",
                     "url": "https://github.com/NickLewanowicz/overboard-ai",
                     "tldr": "MiniMax Ai to compete in Overboard",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "OverboardAi.svg"
+                    "icon": "OverboardAi.svg",
+                    "row": 3,
+                    "col": 6
                 }, {
                     "name": "Reinforced Learning Visualizer Ai",
                     "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
                     "tldr": "Demonstration of Learning Automata in a sandbox",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "LAAi.svg"
+                    "icon": "LAAi.svg",
+                    "row": 4,
+                    "col": 6
                 }, {
                     "name": "BetterPassword Manager",
                     "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
                     "tldr": "Phrase based password research system",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "better-password.svg"
+                    "icon": "better-password.svg",
+                    "row": 3,
+                    "col": 6
                 }, {
                     "name": "Extended-LS",
                     "url": "https://github.com/NickLewanowicz/extended-ls",
                     "tldr": "Modification to Ubuntu's LS command",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "extendedLs.svg"
+                    "icon": "extendedLs.svg",
+                    "row": 3,
+                    "col": 4
                 }],
                 "footer": {
                     "social": {
@@ -3424,7 +3442,7 @@ define("personal-portfolio/pods/components/my-projects/template", ["exports"], f
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "3fIkrhs8", "block": "{\"symbols\":[\"grid\",\"project\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n\"],[4,\"paper-content\",null,[[\"class\",\"layout-padding\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\",\"\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"3 md-8 gt-md-12\",\"4:3 gt-md-1:1\",\"4px md-8px gt-md-16px\"]],{\"statements\":[[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"a\"],[10,\"href\",[19,2,[\"url\"]],null],[7],[0,\"\\n\"],[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[\"project-tile\",[25,\"random\",[2,3],null],[25,\"random\",[2,3],null]]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n                \"],[6,\"i\"],[7],[6,\"a\"],[10,\"href\",[19,2,[\"demo\"]],null],[7],[0,\"Demo\"],[8],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"        \"],[8],[0,\"\\n\\n\"]],\"parameters\":[2]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[8],[0,\"\\n\\n\"],[11,3]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "Pas/n4oR", "block": "{\"symbols\":[\"grid\",\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \\n\"],[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"24\",\"fit\",\"0px\"]],{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"a\"],[10,\"href\",[19,2,[\"url\"]],null],[7],[0,\"\\n\"],[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[[25,\"concat\",[\"project-tile color\",[25,\"mod\",[[19,3,[]],7],null]],null],[19,2,[\"col\"]],[19,2,[\"row\"]]]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n                \"],[6,\"i\"],[7],[6,\"a\"],[10,\"href\",[19,2,[\"demo\"]],null],[7],[0,\"Demo\"],[8],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"        \"],[8],[0,\"\\n\\n\"]],\"parameters\":[2,3]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[6,\"div\"],[9,\"class\",\"scroll-indicator fa fa-chevron-down\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\"],[46]]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,4]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-header/component', ['exports'], function (exports) {
   'use strict';
@@ -4139,6 +4157,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+473095df"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+78b2a437"});
 }
 //# sourceMappingURL=personal-portfolio.map
