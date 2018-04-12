@@ -14,7 +14,10 @@ $tile4: rgba(238, 238, 238,1);
 $tile5: rgba(255, 133, 120,1);
 $tile6: rgb(210, 203, 255);
 $tile7: rgba(82, 179, 217,1);
-$section1: rgb(102, 250, 220);
+$section1: rgba(204, 0, 51, 0.205);
+$section2: rgba(90, 142, 224,0.5);
+$section3: rgba(74, 117, 184, 0.5);
+$section4: rgba(75, 220, 205, 0.5);
 .index {
     position: relative;
     top: 0px;
@@ -113,22 +116,31 @@ $section1: rgb(102, 250, 220);
         margin: 1.2rem;
         color: #7d7d7d;
     }
+    .card-color-0 {
+        background-color: $section2;
+    }
+    .card-color-1 {
+        background-color: $section3;
+    }
+    .card-color-2 {
+        background-color: $section4;
+    }
     .primary-experience-card {
-        -webkit-box-shadow: 10px 10px 60px 0px #888888;
-        padding: 1rem 2rem 4rem 2rem;
-        border-radius: 0.5rem;
-        border-style: solid;
-        border-color: $color7;
-        border-width: 0.2rem;
+        // box-shadow: 10px 10px 60px 0px #888888;
+        // padding: 1rem 2rem 4rem 2rem;
+        // border-radius: 0.5rem;
+        // border-style: solid;
+        // border-color: $color7;
+        // border-width: 0.2rem;
     }
       
     .secondary-experience-card {
-        -webkit-box-shadow: 10px 10px 60px 0px #888888;
-        padding: 1rem 2rem 4rem 2rem;
-        border-radius: 0.5rem;
-        border-style: solid;
-        border-color: $color6;
-        border-width: 0.2rem;
+        // box-shadow: 10px 10px 60px 0px #888888;
+        // padding: 1rem 2rem 4rem 2rem;
+        // border-radius: 0.5rem;
+        // border-style: solid;
+        // border-color: $color6;
+        // border-width: 0.2rem;
     }
     .highlights {
         padding-bottom: 0.4rem;
@@ -146,13 +158,13 @@ $section1: rgb(102, 250, 220);
         h2, h3, .extras {
             margin: 1rem auto 0 auto;
         }
-        -webkit-box-shadow: 10px 10px 60px 0px #888888;
-        padding: 1rem 2rem 2rem 2rem;
-        border-radius: 0.5rem;
-        border-style: solid;
-        border-color: $color3;
-        border-width: 0.2rem;
-        margin-bottom: 5rem;
+        box-shadow: 10px 10px 60px 0px #888888;
+        //padding: 1rem 2rem 2rem 2rem;
+        //border-radius: 0.5rem;
+        //border-style: solid;
+        //border-color: $color3;
+        //border-width: 0.2rem;
+        //margin-bottom: 5rem;
     }
     
 }
@@ -161,6 +173,7 @@ $section1: rgb(102, 250, 220);
     background-color: $section1;
     padding: 4rem 1rem 1rem 1rem ;
     .education-card {
+        align-items: center;
         h2, h3, .extras {
             margin: 1rem auto 0 auto;
         }
