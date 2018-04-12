@@ -1,4 +1,4 @@
-<div id="education" class="layout-row layout-align-center">
+<div id="education" class="layout-column layout-align-center">
 {{#each config as |item index| }}
     <div class="education-card layout-column">
         <h2>{{item.institution}}</h2>
@@ -28,5 +28,15 @@
         
     </div>
 {{/each}}
+{{!-- <div id="liquid-spacer-demo">
+  {{#paper-button onClick=(action "toggleEducation") warn=true}}warn{{/paper-button}}
+  {{#liquid-spacer growDuration=250}}
+    {{#if educationExpand}}
+    true
+    {{else}}
+      false
+    {{/if}}
+  {{/liquid-spacer}}
+</div> --}}
 </div>
 {{yield}}

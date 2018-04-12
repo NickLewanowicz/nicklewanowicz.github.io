@@ -7,8 +7,8 @@
             {{#block.image class=(concat (if (eq (mod index 2) 1) "primary" "secondary") "-timeline-pill")}}
                 {{paper-icon "location-on" size=36 class="experience-icon"}}
             {{/block.image}}
-            {{#block.content as |content|}}
-                <div class={{concat (if (eq (mod index 2) 1) "primary" "secondary") "-experience-card highlights layout-column"}} >
+            {{#block.content class=(concat "card-color-" (mod index 3)) as |content|}}
+                <div class={{concat (if (eq (mod index 2) 1) "primary" "secondary") "-experience-card highlights layout-column card-color-"}} >
                     <span class="layout-row">
                     <h2>{{experience.company}}</h2> 
                     <h4>
