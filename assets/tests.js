@@ -37,7 +37,7 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
 
   QUnit.test('pods/components/my-education/component.js', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'pods/components/my-education/component.js should pass ESLint\n\n');
+    assert.ok(false, 'pods/components/my-education/component.js should pass ESLint\n\n7:13 - Unexpected console statement. (no-console)');
   });
 
   QUnit.test('pods/components/my-experience/component.js', function (assert) {
