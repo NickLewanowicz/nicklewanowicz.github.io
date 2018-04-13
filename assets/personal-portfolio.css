@@ -20051,6 +20051,8 @@ md-tabs {
           box-shadow: 0px 0px 5px inset rgba(0, 0, 0, 0.281); }
 
 #header .particles {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
   background-color: #4fc3f7;
   min-height: 400px; }
 
@@ -20071,12 +20073,24 @@ md-tabs {
   font-size: 3rem;
   text-align: center;
   text-shadow: 0px 0px 15px #000000; }
+  #header h1::-moz-selection {
+    background-color: #000000;
+    /* WebKit/Blink Browsers */ }
+  #header h1::selection {
+    background-color: #000000;
+    /* WebKit/Blink Browsers */ }
 
 #header h2 {
   color: white;
   font-size: 2rem;
   text-align: center;
   text-shadow: 0px 0px 10px #000000; }
+  #header h2::-moz-selection {
+    background-color: #000000;
+    /* WebKit/Blink Browsers */ }
+  #header h2::selection {
+    background-color: #000000;
+    /* WebKit/Blink Browsers */ }
 
 #about {
   padding: 10%;
