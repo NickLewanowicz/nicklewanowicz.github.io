@@ -7,7 +7,7 @@
     rowHeight="fit"
     gutter="0px" as |grid|}}
     {{#each config as |project i|}}
-        {{#grid.tile class=(concat "project-tile color" (mod i 7)) colspan=project.col rowspan=project.row}}
+        {{#grid.tile class=(concat "project-tile dynamic color" (mod i 7)) colspan=project.col rowspan=project.row}}
             <div class="project-content layout-column layout-align-start">
             <div class="header layout-row">
                 <img src={{project.icon}}>
@@ -28,7 +28,7 @@
     {{/each}}
     {{/paper-grid-list}}
 {{/paper-content}}
-<div class="scroll-indicator fa fa-chevron-down">{{paper-icon "keyboard-arrow-right" size=46}}</div>
+<div class="scroll-indicator fa fa-chevron-down">{{paper-icon "keyboard-arrow-right" size=72}}</div>
 </div>
 
 {{yield}}

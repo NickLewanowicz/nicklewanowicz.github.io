@@ -17,30 +17,88 @@ $tile7: rgba(82, 179, 217,1);
 $section1: rgba(204, 0, 51, 0.205);
 $section2: rgba(90, 142, 224,0.5);
 $section3: rgba(74, 117, 184, 0.5);
-$section4: rgba(75, 220, 205, 0.5);
+$section4: blue, lighten-4;
+$section5: rgba(161, 248, 215,1);
+
+$material-color-blue-050:         #e3f2fd !default;
+$material-color-blue-100:         #bbdefb !default;
+$material-color-blue-200:         #90caf9 !default;
+$material-color-blue-300:         #64b5f6 !default;
+$material-color-blue-400:         #42a5f5 !default;
+$material-color-blue-500:         #2196f3 !default;
+$material-color-blue-600:         #1e88e5 !default;
+$material-color-blue-700:         #1976d2 !default;
+$material-color-blue-800:         #1565c0 !default;
+$material-color-blue-900:         #0d47a1 !default;
+$material-color-blue-a100:        #82b1ff !default;
+$material-color-blue-a200:        #448aff !default;
+$material-color-blue-a400:        #2979ff !default;
+$material-color-blue-a700:        #2962ff !default;
+
+$material-color-blue-grey-050:    #eceff1 !default;
+$material-color-blue-grey-100:    #cfd8dc !default;
+$material-color-blue-grey-200:    #b0bec5 !default;
+$material-color-blue-grey-300:    #90a4ae !default;
+$material-color-blue-grey-400:    #78909c !default;
+$material-color-blue-grey-500:    #607d8b !default;
+$material-color-blue-grey-600:    #546e7a !default;
+$material-color-blue-grey-700:    #455a64 !default;
+$material-color-blue-grey-800:    #37474f !default;
+$material-color-blue-grey-900:    #263238 !default;
+
+$material-color-light-blue-050:   #e1f5fe !default;
+$material-color-light-blue-100:   #b3e5fc !default;
+$material-color-light-blue-200:   #81d4fa !default;
+$material-color-light-blue-300:   #4fc3f7 !default;
+$material-color-light-blue-400:   #29b6f6 !default;
+$material-color-light-blue-500:   #03a9f4 !default;
+$material-color-light-blue-600:   #039be5 !default;
+$material-color-light-blue-700:   #0288d1 !default;
+$material-color-light-blue-800:   #0277bd !default;
+$material-color-light-blue-900:   #01579b !default;
+$material-color-light-blue-a100:  #80d8ff !default;
+$material-color-light-blue-a200:  #40c4ff !default;
+$material-color-light-blue-a400:  #00b0ff !default;
+$material-color-light-blue-a700:  #0091ea !default;
+
+$shadow: rgba(0, 0, 0, 0.281);
+
+.body{
+    width:100%;
+}
+
 .index {
+    background-color: $material-color-blue-050;
     position: relative;
     top: 0px;
 }
 
+.dynamic:hover{
+    box-shadow: 0px 0px 10px 0px $shadow;
+    z-index: 1;
+}
+
 #header {
-    background-color:black;
-    background: 
-    linear-gradient(135deg, $color2 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, $color2 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, $color2 25%, transparent 25%),
-    linear-gradient(45deg, $color2 25%, transparent 25%);	
-    background-size: 100px 100px;
-    background-color: $color1;
-    padding: 20px;
     
+    .particles {
+        background-color: $material-color-light-blue-300;
+        min-height: 400px;
+    }
+    .header-info {
+        padding-top: 250px;
+        width: 100%;
+        height: 5%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .center {
         margin: auto;
         margin-top: 4VH;
     }
     h1 {
         color: white;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
         text-shadow: 0px 0px 15px #000000;
     }
@@ -53,15 +111,16 @@ $section4: rgba(75, 220, 205, 0.5);
 }
 
 #about {
-    box-shadow: inset 0 0 10px #000000;
+    //box-shadow: inset 0 0 10px #000000;
     // height: 500px; 
     // /* Create the parallax scrolling effect */
     // background-attachment: fixed;
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: cover;
-    padding: 5rem 10rem 5rem 10rem;
+    padding: 10%;
 
+    background-color: $material-color-blue-050;
     .center {
         margin: auto;
     }
@@ -77,12 +136,14 @@ $section4: rgba(75, 220, 205, 0.5);
         text-shadow: 0px 0px 10px #000000;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: left;
+        text-indent: 10px;
     }
 }
 
 #experience {
+    background-color: $material-color-blue-050;
     h1 { 
         color: #111; 
         font-family: 'Open Sans Condensed', sans-serif; 
@@ -117,13 +178,13 @@ $section4: rgba(75, 220, 205, 0.5);
         color: #7d7d7d;
     }
     .card-color-0 {
-        background-color: $section2;
+        background-color: $material-color-blue-100;
     }
     .card-color-1 {
-        background-color: $section3;
+        background-color: $material-color-blue-200;
     }
     .card-color-2 {
-        background-color: $section4;
+        background-color: $material-color-blue-300;
     }
     .primary-experience-card {
         // box-shadow: 10px 10px 60px 0px #888888;
@@ -170,7 +231,7 @@ $section4: rgba(75, 220, 205, 0.5);
 }
 
 #education {
-    background-color: $section1;
+    background-color: $material-color-blue-grey-100;
     padding: 4rem 1rem 1rem 1rem ;
     .education-card {
         align-items: center;
@@ -204,25 +265,25 @@ $section4: rgba(75, 220, 205, 0.5);
         
     }
     .color0 {
-        background-color: $tile1;
+        background-color: $material-color-light-blue-050;
     }
     .color1 {
-        background-color: $tile2;
+        background-color: $material-color-light-blue-100;
     }
     .color2 {
-        background-color: $tile3;
+        background-color: $material-color-light-blue-300;
     }
     .color3 {
-        background-color: $tile4;
+        background-color: $material-color-light-blue-400;
     }
     .color4 {
-        background-color: $tile5;
+        background-color: $material-color-light-blue-200;
     }
     .color5 {
-        background-color: $tile6;
+        background-color: $material-color-light-blue-100;
     }
     .color6 {
-        background-color: $tile6;
+        background-color: $material-color-light-blue-200;
     }
     .project-tile {
         .project-content {
@@ -258,27 +319,27 @@ $section4: rgba(75, 220, 205, 0.5);
         height: 60VH;
     }
     .scroll-indicator {	
+        z-index: 2;
         position: absolute;
-        left: 50%;
+        //left: 50%;
         font-size: 50px;
-        
         -webkit-animation: bounce 1s infinite; 
         animation: bounce 1s infinite;
     }
     
     @keyframes bounce {
         0% {
-            top: 92%;
-            left: 96%;
+            top: 93%;
+            right: 0;
         }
         
         50% {
-            top: 92%;
-            left: 97%;
+            top: 93%;
+            right: 10px;
         }
         100% {
-            top: 92%;
-            left: 96%;
+            top: 93%;
+            right: 0;
         }
     }
 }

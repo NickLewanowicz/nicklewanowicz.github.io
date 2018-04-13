@@ -1,0 +1,6 @@
+{
+  "name": "personal-portfolio",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  }
+}

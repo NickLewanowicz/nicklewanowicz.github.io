@@ -1,7 +1,21 @@
 <div class="header layout-column" id="header">
-  <h1 class="center">{{config.name}}</h1>
-  <h2 class="center">{{config.position}}</h2>
-  {{#paper-button class="center" href="resume.json" raised=true primary=true}}Download Resume{{/paper-button}}
+  {{ember-particles
+  class="particles"
+  options=(ember-particles-options
+    'particles.number.value' 360
+    'particles.number.density.enable' true
+    'particles.color.value' '#0d47a1'
+    'particles.size.value' 3
+    'particles.line_linked.enable' true
+    'particles.line_linked.color' '#0d47a1'
+    'particles.line_linked.opacity' 0.3
+    'particles.line_linked.width' 2
+  )}}
+  <div class='header-info layout-column layout-align-center gt-md big-header'>
+    <h1 class="center">{{config.name}}</h1>
+    <h2 class="center">{{config.position}}</h2>
+    {{#paper-button class="center" href="resume.json" raised=true primary=true}}Download Resume{{/paper-button}}
+  </div>
 </div>
 <div class='header-overlay'></div>
 <div class='header-blur'></div>
