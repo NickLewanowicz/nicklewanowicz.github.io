@@ -8,7 +8,7 @@ export default Route.extend({
                 "position": "Software Developer"
             },
             "about": {
-                "description": "Seasoned Software Engineer with 26 months of professional work experience primarily focised on Web Development with Ember.js; currently working as a full stack developer with Ember and Go aswell as contract based mobile app development for Android and iOS using in React Native. Currently completing an Honours in Computer Science with Specialization in Software Engineering in 4th year. "
+                "description": "Seasoned Software Engineer with 26 months of professional work experience. Primarily focused on Web Development with Ember.js. Currently working as a full-stack developer with Ember and Go as well as contract-based mobile application development for Android and iOS using React Native. Currently completing a Bachelor of Computer Science with Honours, specializing in Software Engineering in 4th year."
             },
             "education": [
                 {
@@ -65,11 +65,11 @@ export default Route.extend({
                     "endDate": "2017-09-1",
                     "summary": "Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.",
                     "highlights": [
-                        "Yeoman application scaffolding",
+                        "Integrated new web frameworks into exsisting C# and .NET stack",
                         "Developed features for Web Applications using popular industry tools",
                         "Experience with popular build, automation, and development interfaces",
-                        "Manipulation of both Javascript and Java code base, for front and back-end development",
-                        "Created and maintained build tools used by other developers"
+                        "Integration of new UI features with large long standing codebases",
+                        "Interaction with several derivitives of SQL and similar database types"
                     ]
                 },
                 {
@@ -81,12 +81,12 @@ export default Route.extend({
                     "summary": "Worked with amazing talent on the front and back end of products BluePlanet, IceBreaker, and Frost UX style guide.",
                     "highlights": [
                         "Used Ember.js to rapidly create and prototype web apps.",
-                        "Developed a full stack internal application to manage dozens of internal dependencies.",
+                        "Developed a full stack internal application to manage use of internal dependencies company wide.",
                         "Aid in the upgrading and implementation of new UI components and features."
                     ]
                 },
                 {
-                    "company": "MCWarside",
+                    "company": "Warside",
                     "position": "Owner/Creator",
                     "website": "http://www.MCWarside.com/",
                     "startDate": "2013-8-01",
