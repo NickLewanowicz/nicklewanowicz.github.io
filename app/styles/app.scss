@@ -78,6 +78,15 @@ $shadow: rgba(0, 0, 0, 0.281);
     z-index: 1;
 }
 
+md-tabs {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:2;
+    background-color: $material-color-blue-grey-100;
+    box-shadow: 0px 0px 5px inset $shadow;
+}
+
 #header {
     
     .particles {
