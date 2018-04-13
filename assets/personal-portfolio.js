@@ -3114,7 +3114,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "position": "Software Developer"
                 },
                 "about": {
-                    "description": "Seasoned Software Engineer with 26 months of professional work experience primarily focised on Web Development with Ember.js; currently working as a full stack developer with Ember and Go aswell as contract based mobile app development for Android and iOS using in React Native. Currently completing an Honours in Computer Science with Specialization in Software Engineering in 4th year. "
+                    "description": "Seasoned Software Engineer with 26 months of professional work experience. Primarily focused on Web Development with Ember.js. Currently working as a full-stack developer with Ember and Go as well as contract-based mobile application development for Android and iOS using React Native. Currently completing a Bachelor of Computer Science with Honours, specializing in Software Engineering in 4th year."
                 },
                 "education": [{
                     "institution": "Carleton University",
@@ -3150,7 +3150,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "startDate": "2017-05-01",
                     "endDate": "2017-09-1",
                     "summary": "Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.",
-                    "highlights": ["Yeoman application scaffolding", "Developed features for Web Applications using popular industry tools", "Experience with popular build, automation, and development interfaces", "Manipulation of both Javascript and Java code base, for front and back-end development", "Created and maintained build tools used by other developers"]
+                    "highlights": ["Integrated new web frameworks into exsisting C# and .NET stack", "Developed features for Web Applications using popular industry tools", "Experience with popular build, automation, and development interfaces", "Integration of new UI features with large long standing codebases", "Interaction with several derivitives of SQL and similar database types"]
                 }, {
                     "company": "Ciena - Frost Core",
                     "position": "Full Stack Software Developer",
@@ -3158,9 +3158,9 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "startDate": "2016-09-01",
                     "endDate": "2017-05-01",
                     "summary": "Worked with amazing talent on the front and back end of products BluePlanet, IceBreaker, and Frost UX style guide.",
-                    "highlights": ["Used Ember.js to rapidly create and prototype web apps.", "Developed a full stack internal application to manage dozens of internal dependencies.", "Aid in the upgrading and implementation of new UI components and features."]
+                    "highlights": ["Used Ember.js to rapidly create and prototype web apps.", "Developed a full stack internal application to manage use of internal dependencies company wide.", "Aid in the upgrading and implementation of new UI components and features."]
                 }, {
-                    "company": "MCWarside",
+                    "company": "Warside",
                     "position": "Owner/Creator",
                     "website": "http://www.MCWarside.com/",
                     "startDate": "2013-8-01",
@@ -3517,7 +3517,7 @@ define("personal-portfolio/pods/components/portfolio-header/template", ["exports
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "AdGKZvLQ", "block": "{\"symbols\":[\"&default\"],\"statements\":[[6,\"div\"],[9,\"class\",\"header layout-column\"],[9,\"id\",\"header\"],[7],[0,\"\\n  \"],[1,[25,\"ember-particles\",null,[[\"class\",\"options\"],[\"particles\",[25,\"ember-particles-options\",[\"particles.number.value\",200,\"particles.number.density.enable\",true,\"particles.color.value\",\"#0d47a1\",\"particles.size.value\",3,\"interactivity.events.onhover.enabled\",true,\"interactivity.events.onhover.mode\",\"repulse\",\"interactivity.modes.repulse.distance\",100,\"particles.line_linked.enable\",true,\"particles.line_linked.color\",\"#0d47a1\",\"particles.line_linked.opacity\",0.3,\"particles.line_linked.width\",2],null]]]],false],[0,\"\\n  \"],[6,\"div\"],[9,\"class\",\"header-info layout-column layout-align-center gt-md big-header\"],[7],[0,\"\\n    \"],[6,\"h1\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"name\"]],false],[8],[0,\"\\n    \"],[6,\"h2\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"position\"]],false],[8],[0,\"\\n    \"],[4,\"paper-button\",null,[[\"class\",\"href\",\"raised\",\"primary\"],[\"center\",\"resume.json\",true,true]],{\"statements\":[[0,\"Download Resume\"]],\"parameters\":[]},null],[0,\"\\n  \"],[8],[0,\"\\n\"],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-overlay\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-blur\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"id\",\"header-down\"],[7],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/portfolio-header/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "R2aIag/s", "block": "{\"symbols\":[\"&default\"],\"statements\":[[6,\"div\"],[9,\"class\",\"header layout-column\"],[9,\"id\",\"header\"],[7],[0,\"\\n  \"],[1,[25,\"ember-particles\",null,[[\"class\",\"options\"],[\"particles\",[25,\"ember-particles-options\",[\"particles.number.value\",200,\"particles.number.density.enable\",true,\"particles.color.value\",\"#0d47a1\",\"particles.size.value\",3,\"interactivity.events.onhover.enabled\",true,\"interactivity.events.onhover.mode\",\"repulse\",\"interactivity.modes.repulse.distance\",100,\"particles.line_linked.enable\",true,\"particles.line_linked.color\",\"#0d47a1\",\"particles.line_linked.opacity\",0.3,\"particles.line_linked.width\",2],null]]]],false],[0,\"\\n  \"],[6,\"div\"],[9,\"class\",\"header-info layout-column layout-align-center gt-md big-header\"],[7],[0,\"\\n    \"],[6,\"h1\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"name\"]],false],[8],[0,\"\\n    \"],[6,\"h2\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"position\"]],false],[8],[0,\"\\n    \"],[6,\"a\"],[9,\"class\",\"center md-default-theme md-button md-primary md-raised\"],[9,\"href\",\"Nicholas_Lewanowicz_Resume.pdf\"],[9,\"download\",\"\"],[7],[0,\" Download Resume\"],[8],[0,\"\\n  \"],[8],[0,\"\\n\"],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-overlay\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-blur\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"id\",\"header-down\"],[7],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/portfolio-header/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-menu/component', ['exports'], function (exports) {
   'use strict';
@@ -4216,6 +4216,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+358cfcff"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+609beda8"});
 }
 //# sourceMappingURL=personal-portfolio.map
