@@ -4216,6 +4216,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+5a7f9540"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+484dc4f6"});
 }
 //# sourceMappingURL=personal-portfolio.map

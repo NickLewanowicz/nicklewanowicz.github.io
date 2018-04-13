@@ -20046,7 +20046,7 @@ md-tabs {
   top: 0;
   width: 100%;
   z-index: 2;
-  background-color: #cfd8dc;
+  background-color: rgba(0, 0, 0, 0.281);
   -webkit-box-shadow: 0px 0px 5px inset rgba(0, 0, 0, 0.281);
           box-shadow: 0px 0px 5px inset rgba(0, 0, 0, 0.281); }
 
