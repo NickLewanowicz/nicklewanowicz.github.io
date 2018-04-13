@@ -90,6 +90,7 @@ md-tabs {
 #header {
     
     .particles {
+        filter: blur(2px);
         background-color: $material-color-light-blue-300;
         min-height: 400px;
     }
@@ -106,12 +107,18 @@ md-tabs {
         margin-top: 4VH;
     }
     h1 {
+        &::selection {
+            background-color: #000000; /* WebKit/Blink Browsers */
+          }
         color: white;
         font-size: 3rem;
         text-align: center;
         text-shadow: 0px 0px 15px #000000;
     }
     h2 {
+        &::selection {
+            background-color: #000000; /* WebKit/Blink Browsers */
+          }
         color: white;
         font-size: 2rem;
         text-align: center;
