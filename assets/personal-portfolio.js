@@ -85,6 +85,19 @@ define('personal-portfolio/components/basic-dropdown/trigger', ['exports', 'embe
     }
   });
 });
+define('personal-portfolio/components/ember-particles', ['exports', 'ember-particles/components/ember-particles/component'], function (exports, _component) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _component.default;
+    }
+  });
+});
 define('personal-portfolio/components/ember-wormhole', ['exports', 'ember-wormhole/components/ember-wormhole'], function (exports, _emberWormhole) {
   'use strict';
 
@@ -1758,6 +1771,25 @@ define('personal-portfolio/helpers/div', ['exports', 'ember-math-helpers/helpers
     }
   });
 });
+define('personal-portfolio/helpers/ember-particles-options', ['exports', 'ember-particles/helpers/ember-particles-options'], function (exports, _emberParticlesOptions) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _emberParticlesOptions.default;
+    }
+  });
+  Object.defineProperty(exports, 'emberParticlesOptions', {
+    enumerable: true,
+    get: function () {
+      return _emberParticlesOptions.emberParticlesOptions;
+    }
+  });
+});
 define('personal-portfolio/helpers/ember-power-select-is-group', ['exports', 'ember-power-select/helpers/ember-power-select-is-group'], function (exports, _emberPowerSelectIsGroup) {
   'use strict';
 
@@ -3082,7 +3114,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "position": "Software Developer"
                 },
                 "about": {
-                    "description": "Seasoned Software Engineer with strong professional experience in Web Development and Ember.js; avidly pursuing experience in full stack development. Completing an Honours in Computer Science with Specialization in Software Engineering."
+                    "description": "Seasoned Software Engineer with 26 months of professional work experience primarily focised on Web Development with Ember.js; currently working as a full stack developer with Ember and Go aswell as contract based mobile app development for Android and iOS using in React Native. Currently completing an Honours in Computer Science with Specialization in Software Engineering in 4th year. "
                 },
                 "education": [{
                     "institution": "Carleton University",
@@ -3398,7 +3430,6 @@ define('personal-portfolio/pods/components/my-education/component', ['exports'],
         educationExpand: false,
         actions: {
             toggleEducation: function toggleEducation() {
-                console.log(this.get('educationExpand'));
                 this.toggleProperty('educationExpand');
             }
         }
@@ -3438,7 +3469,7 @@ define("personal-portfolio/pods/components/my-experience/template", ["exports"],
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "co3w+/ii", "block": "{\"symbols\":[\"timeline\",\"experience\",\"index\",\"block\",\"content\",\"highlight\",\"&default\"],\"statements\":[[0,\"\\n    \\n\"],[6,\"div\"],[9,\"id\",\"experience\"],[7],[0,\"\\n\"],[4,\"vertical-timeline\",null,null,{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"block\"]]],null,{\"statements\":[[4,\"component\",[[19,4,[\"image\"]]],[[\"class\"],[[25,\"concat\",[[25,\"if\",[[25,\"eq\",[[25,\"mod\",[[19,3,[]],2],null],1],null],\"primary\",\"secondary\"],null],\"-timeline-pill\"],null]]],{\"statements\":[[0,\"                \"],[1,[25,\"paper-icon\",[\"location-on\"],[[\"size\",\"class\"],[36,\"experience-icon\"]]],false],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[19,4,[\"content\"]]],[[\"class\"],[[25,\"concat\",[\"card-color-\",[25,\"mod\",[[19,3,[]],3],null]],null]]],{\"statements\":[[0,\"                \"],[6,\"div\"],[10,\"class\",[25,\"concat\",[[25,\"if\",[[25,\"eq\",[[25,\"mod\",[[19,3,[]],2],null],1],null],\"primary\",\"secondary\"],null],\"-experience-card highlights layout-column card-color-\"],null],null],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"layout-row\"],[7],[0,\"\\n                    \"],[6,\"h2\"],[7],[1,[19,2,[\"company\"]],false],[8],[0,\" \\n                    \"],[6,\"h4\"],[7],[0,\"\\n\"],[4,\"if\",[[25,\"eq\",[[19,2,[\"endDate\"]],\"Present\"],null]],null,{\"statements\":[[0,\"                            \"],[1,[25,\"add\",[[25,\"moment-diff\",[[19,2,[\"startDate\"]],[20,[\"now\"]]],[[\"precision\"],[\"months\"]]],1],null],false],[0,\" Months\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"                            \"],[1,[25,\"add\",[[25,\"moment-diff\",[[19,2,[\"startDate\"]],[19,2,[\"endDate\"]]],[[\"precision\"],[\"months\"]]],1],null],false],[0,\" Months\\n\"]],\"parameters\":[]}],[0,\"                    \"],[8],[0,\"\\n                    \"],[8],[0,\"\\n                    \"],[6,\"p\"],[7],[1,[19,2,[\"position\"]],false],[8],[0,\"\\n                    \\n\"],[4,\"each\",[[19,2,[\"highlights\"]]],null,{\"statements\":[[0,\"                            \"],[6,\"div\"],[9,\"class\",\"layout-row\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\",\"class\"],[30,\"icon flex-5\"]]],false],[6,\"li\"],[9,\"class\",\"highlights\"],[7],[1,[19,6,[]],false],[8],[8],[0,\"\\n\"]],\"parameters\":[6]},null],[4,\"component\",[[19,5,[\"date\"]]],null,{\"statements\":[[0,\"                        \"],[1,[25,\"moment-format\",[[19,2,[\"startDate\"]],\"MMM YYYY\"],null],false],[0,\" to \\n\"],[4,\"if\",[[25,\"eq\",[[19,2,[\"endDate\"]],\"Present\"],null]],null,{\"statements\":[[0,\"                            Present\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"                            \"],[1,[25,\"moment-format\",[[19,2,[\"endDate\"]],\"MMM YYYY\"],null],false],[0,\"\\n\"]],\"parameters\":[]}]],\"parameters\":[]},null],[0,\"                \"],[8],[0,\"\\n\"]],\"parameters\":[5]},null]],\"parameters\":[4]},null]],\"parameters\":[2,3]},null],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\"],[11,7]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-experience/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "3waZhhX4", "block": "{\"symbols\":[\"timeline\",\"experience\",\"index\",\"block\",\"content\",\"highlight\",\"&default\"],\"statements\":[[0,\"\\n    \\n\"],[6,\"div\"],[9,\"id\",\"experience\"],[7],[0,\"\\n\"],[4,\"vertical-timeline\",null,null,{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"block\"]]],null,{\"statements\":[[4,\"component\",[[19,4,[\"image\"]]],[[\"class\"],[[25,\"concat\",[[25,\"if\",[[25,\"eq\",[[25,\"mod\",[[19,3,[]],2],null],1],null],\"primary\",\"secondary\"],null],\"-timeline-pill\"],null]]],{\"statements\":[[0,\"                \"],[1,[25,\"paper-icon\",[\"location-on\"],[[\"size\",\"class\"],[36,\"experience-icon\"]]],false],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[19,4,[\"content\"]]],[[\"class\"],[[25,\"concat\",[\"dynamic card-color-\",[25,\"mod\",[[19,3,[]],3],null]],null]]],{\"statements\":[[0,\"                \"],[6,\"div\"],[10,\"class\",[25,\"concat\",[[25,\"if\",[[25,\"eq\",[[25,\"mod\",[[19,3,[]],2],null],1],null],\"primary\",\"secondary\"],null],\"-experience-card highlights layout-column card-color-\"],null],null],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"layout-row\"],[7],[0,\"\\n                    \"],[6,\"h2\"],[7],[1,[19,2,[\"company\"]],false],[8],[0,\" \\n                    \"],[6,\"h4\"],[7],[0,\"\\n\"],[4,\"if\",[[25,\"eq\",[[19,2,[\"endDate\"]],\"Present\"],null]],null,{\"statements\":[[0,\"                            \"],[1,[25,\"add\",[[25,\"moment-diff\",[[19,2,[\"startDate\"]],[20,[\"now\"]]],[[\"precision\"],[\"months\"]]],1],null],false],[0,\" Months\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"                            \"],[1,[25,\"add\",[[25,\"moment-diff\",[[19,2,[\"startDate\"]],[19,2,[\"endDate\"]]],[[\"precision\"],[\"months\"]]],1],null],false],[0,\" Months\\n\"]],\"parameters\":[]}],[0,\"                    \"],[8],[0,\"\\n                    \"],[8],[0,\"\\n                    \"],[6,\"p\"],[7],[1,[19,2,[\"position\"]],false],[8],[0,\"\\n                    \\n\"],[4,\"each\",[[19,2,[\"highlights\"]]],null,{\"statements\":[[0,\"                            \"],[6,\"div\"],[9,\"class\",\"layout-row\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\",\"class\"],[30,\"icon flex-5\"]]],false],[6,\"li\"],[9,\"class\",\"highlights\"],[7],[1,[19,6,[]],false],[8],[8],[0,\"\\n\"]],\"parameters\":[6]},null],[4,\"component\",[[19,5,[\"date\"]]],null,{\"statements\":[[0,\"                        \"],[1,[25,\"moment-format\",[[19,2,[\"startDate\"]],\"MMM YYYY\"],null],false],[0,\" to \\n\"],[4,\"if\",[[25,\"eq\",[[19,2,[\"endDate\"]],\"Present\"],null]],null,{\"statements\":[[0,\"                            Present\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"                            \"],[1,[25,\"moment-format\",[[19,2,[\"endDate\"]],\"MMM YYYY\"],null],false],[0,\"\\n\"]],\"parameters\":[]}]],\"parameters\":[]},null],[0,\"                \"],[8],[0,\"\\n\"]],\"parameters\":[5]},null]],\"parameters\":[4]},null]],\"parameters\":[2,3]},null],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\"],[11,7]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-experience/template.hbs" } });
 });
 define('personal-portfolio/pods/components/my-projects/component', ['exports'], function (exports) {
   'use strict';
@@ -3454,7 +3485,23 @@ define("personal-portfolio/pods/components/my-projects/template", ["exports"], f
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "nr7FxGES", "block": "{\"symbols\":[\"grid\",\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \\n\"],[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"27\",\"fit\",\"0px\"]],{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[[25,\"concat\",[\"project-tile color\",[25,\"mod\",[[19,3,[]],7],null]],null],[19,2,[\"col\"]],[19,2,[\"row\"]]]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n\"],[4,\"if\",[[19,2,[\"demo\"]]],null,{\"statements\":[[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,2,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,2,[\"url\"]],[25,\"not\",[[19,2,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[2,3]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[6,\"div\"],[9,\"class\",\"scroll-indicator fa fa-chevron-down\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\"],[46]]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,4]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "Dncdeqml", "block": "{\"symbols\":[\"grid\",\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \\n\"],[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"27\",\"fit\",\"0px\"]],{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[[25,\"concat\",[\"project-tile dynamic color\",[25,\"mod\",[[19,3,[]],7],null]],null],[19,2,[\"col\"]],[19,2,[\"row\"]]]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n\"],[4,\"if\",[[19,2,[\"demo\"]]],null,{\"statements\":[[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,2,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,2,[\"url\"]],[25,\"not\",[[19,2,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[2,3]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[6,\"div\"],[9,\"class\",\"scroll-indicator fa fa-chevron-down\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\"],[72]]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,4]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
+});
+define('personal-portfolio/pods/components/my-recommendations/component', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({});
+});
+define("personal-portfolio/pods/components/my-recommendations/template", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "NPvS+uH9", "block": "{\"symbols\":[\"&default\"],\"statements\":[[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-recommendations/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-header/component', ['exports'], function (exports) {
   'use strict';
@@ -3470,7 +3517,7 @@ define("personal-portfolio/pods/components/portfolio-header/template", ["exports
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "XIPk7b9Y", "block": "{\"symbols\":[\"&default\"],\"statements\":[[6,\"div\"],[9,\"class\",\"header layout-column\"],[9,\"id\",\"header\"],[7],[0,\"\\n  \"],[6,\"h1\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"name\"]],false],[8],[0,\"\\n  \"],[6,\"h2\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"position\"]],false],[8],[0,\"\\n  \"],[4,\"paper-button\",null,[[\"class\",\"href\",\"raised\",\"primary\"],[\"center\",\"resume.json\",true,true]],{\"statements\":[[0,\"Download Resume\"]],\"parameters\":[]},null],[0,\"\\n\"],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-overlay\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-blur\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"id\",\"header-down\"],[7],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/portfolio-header/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "GFlj7xcp", "block": "{\"symbols\":[\"&default\"],\"statements\":[[6,\"div\"],[9,\"class\",\"header layout-column\"],[9,\"id\",\"header\"],[7],[0,\"\\n  \"],[1,[25,\"ember-particles\",null,[[\"class\",\"options\"],[\"particles\",[25,\"ember-particles-options\",[\"particles.number.value\",360,\"particles.number.density.enable\",true,\"particles.color.value\",\"#0d47a1\",\"particles.size.value\",3,\"particles.line_linked.enable\",true,\"particles.line_linked.color\",\"#0d47a1\",\"particles.line_linked.opacity\",0.3,\"particles.line_linked.width\",2],null]]]],false],[0,\"\\n  \"],[6,\"div\"],[9,\"class\",\"header-info layout-column layout-align-center gt-md big-header\"],[7],[0,\"\\n    \"],[6,\"h1\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"name\"]],false],[8],[0,\"\\n    \"],[6,\"h2\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"position\"]],false],[8],[0,\"\\n    \"],[4,\"paper-button\",null,[[\"class\",\"href\",\"raised\",\"primary\"],[\"center\",\"resume.json\",true,true]],{\"statements\":[[0,\"Download Resume\"]],\"parameters\":[]},null],[0,\"\\n  \"],[8],[0,\"\\n\"],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-overlay\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"header-blur\"],[7],[8],[0,\"\\n\"],[6,\"div\"],[9,\"id\",\"header-down\"],[7],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/portfolio-header/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-menu/component', ['exports'], function (exports) {
   'use strict';
@@ -4169,6 +4216,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+76f7eece"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+5a7f9540"});
 }
 //# sourceMappingURL=personal-portfolio.map

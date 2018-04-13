@@ -20028,34 +20028,59 @@ md-fab-speed-dial {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
+.body {
+  width: 100%; }
+
 .index {
+  background-color: #e3f2fd;
   position: relative;
   top: 0px; }
 
-#header {
-  background-color: black;
-  background: linear-gradient(135deg, #413f54 25%, transparent 25%) -50px 0, linear-gradient(225deg, #413f54 25%, transparent 25%) -50px 0, linear-gradient(315deg, #413f54 25%, transparent 25%), linear-gradient(45deg, #413f54 25%, transparent 25%);
-  background-size: 100px 100px;
-  background-color: #30292f;
-  padding: 20px; }
-  #header .center {
-    margin: auto;
-    margin-top: 4VH; }
-  #header h1 {
-    color: white;
-    font-size: 4rem;
-    text-align: center;
-    text-shadow: 0px 0px 15px #000000; }
-  #header h2 {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    text-shadow: 0px 0px 10px #000000; }
+.dynamic:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.281);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.281);
+  z-index: 1; }
+
+md-tabs {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #cfd8dc;
+  -webkit-box-shadow: 0px 0px 5px inset rgba(0, 0, 0, 0.281);
+          box-shadow: 0px 0px 5px inset rgba(0, 0, 0, 0.281); }
+
+#header .particles {
+  background-color: #4fc3f7;
+  min-height: 400px; }
+
+#header .header-info {
+  padding-top: 250px;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#header .center {
+  margin: auto;
+  margin-top: 4VH; }
+
+#header h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0px 0px 15px #000000; }
+
+#header h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0px 0px 10px #000000; }
 
 #about {
-  -webkit-box-shadow: inset 0 0 10px #000000;
-          box-shadow: inset 0 0 10px #000000;
-  padding: 5rem 10rem 5rem 10rem; }
+  padding: 10%;
+  background-color: #e3f2fd; }
   #about .center {
     margin: auto; }
   #about h1 {
@@ -20067,64 +20092,58 @@ md-fab-speed-dial {
     color: white;
     text-shadow: 0px 0px 10px #000000; }
   #about p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    text-indent: 10px; }
+
+#experience {
+  background-color: #e3f2fd; }
+  #experience h1 {
+    color: #111;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 0 0 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase; }
+  #experience .center {
+    margin: 2rem;
+    text-align: center; }
+  #experience .head {
+    color: #413f54;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
     text-align: left; }
-
-#experience h1 {
-  color: #111;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 64px;
-  margin: 0 0 0;
-  padding: 20px 30px;
-  text-align: center;
-  text-transform: uppercase; }
-
-#experience .center {
-  margin: 2rem;
-  text-align: center; }
-
-#experience .head {
-  color: #413f54;
-  margin-bottom: 10rem;
-  margin-left: 10rem;
-  text-align: left; }
-
-#experience .xp-item {
-  padding: 4rem; }
-
-#experience h4 {
-  margin: 1.2rem;
-  color: #7d7d7d; }
-
-#experience .card-color-0 {
-  background-color: rgba(90, 142, 224, 0.5); }
-
-#experience .card-color-1 {
-  background-color: rgba(74, 117, 184, 0.5); }
-
-#experience .card-color-2 {
-  background-color: rgba(75, 220, 205, 0.5); }
-
-#experience .highlights {
-  padding-bottom: 0.4rem;
-  list-style-type: none;
-  margin-top: 0.3rem; }
-  #experience .highlights .icon {
-    margin: 0 0 1rem 0; }
-
-#experience .experience-card {
-  width: 50%;
-  margin: auto;
-  margin-top: 20px;
-  -webkit-box-shadow: 10px 10px 60px 0px #888888;
-          box-shadow: 10px 10px 60px 0px #888888; }
-  #experience .experience-card h2, #experience .experience-card h3, #experience .experience-card .extras {
-    margin: 1rem auto 0 auto; }
+  #experience .xp-item {
+    padding: 4rem; }
+  #experience h4 {
+    margin: 1.2rem;
+    color: #7d7d7d; }
+  #experience .card-color-0 {
+    background-color: #bbdefb; }
+  #experience .card-color-1 {
+    background-color: #90caf9; }
+  #experience .card-color-2 {
+    background-color: #64b5f6; }
+  #experience .highlights {
+    padding-bottom: 0.4rem;
+    list-style-type: none;
+    margin-top: 0.3rem; }
+    #experience .highlights .icon {
+      margin: 0 0 1rem 0; }
+  #experience .experience-card {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    -webkit-box-shadow: 10px 10px 60px 0px #888888;
+            box-shadow: 10px 10px 60px 0px #888888; }
+    #experience .experience-card h2, #experience .experience-card h3, #experience .experience-card .extras {
+      margin: 1rem auto 0 auto; }
 
 #education {
-  background-color: rgba(204, 0, 51, 0.205);
+  background-color: #cfd8dc;
   padding: 4rem 1rem 1rem 1rem; }
   #education .education-card {
     -webkit-box-align: center;
@@ -20144,19 +20163,19 @@ md-fab-speed-dial {
 #projects {
   background: #5f5aa2; }
   #projects .color0 {
-    background-color: #e4f1fe; }
+    background-color: #e1f5fe; }
   #projects .color1 {
-    background-color: #86e2d5; }
+    background-color: #b3e5fc; }
   #projects .color2 {
-    background-color: #fde3a7; }
+    background-color: #4fc3f7; }
   #projects .color3 {
-    background-color: #eeeeee; }
+    background-color: #29b6f6; }
   #projects .color4 {
-    background-color: #ff8578; }
+    background-color: #81d4fa; }
   #projects .color5 {
-    background-color: #d2cbff; }
+    background-color: #b3e5fc; }
   #projects .color6 {
-    background-color: #d2cbff; }
+    background-color: #81d4fa; }
   #projects .project-tile {
     color: black; }
     #projects .project-tile .project-content {
@@ -20177,33 +20196,33 @@ md-fab-speed-dial {
     width: 250VH;
     height: 60VH; }
   #projects .scroll-indicator {
+    z-index: 2;
     position: absolute;
-    left: 50%;
     font-size: 50px;
     -webkit-animation: bounce 1s infinite;
     animation: bounce 1s infinite; }
 
 @-webkit-keyframes bounce {
   0% {
-    top: 92%;
-    left: 96%; }
+    top: 93%;
+    right: 0; }
   50% {
-    top: 92%;
-    left: 97%; }
+    top: 93%;
+    right: 10px; }
   100% {
-    top: 92%;
-    left: 96%; } }
+    top: 93%;
+    right: 0; } }
 
 @keyframes bounce {
   0% {
-    top: 92%;
-    left: 96%; }
+    top: 93%;
+    right: 0; }
   50% {
-    top: 92%;
-    left: 97%; }
+    top: 93%;
+    right: 10px; }
   100% {
-    top: 92%;
-    left: 96%; } }
+    top: 93%;
+    right: 0; } }
 
 img {
   max-width: 100%; }

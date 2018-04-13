@@ -37,7 +37,7 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
 
   QUnit.test('pods/components/my-education/component.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'pods/components/my-education/component.js should pass ESLint\n\n7:13 - Unexpected console statement. (no-console)');
+    assert.ok(true, 'pods/components/my-education/component.js should pass ESLint\n\n');
   });
 
   QUnit.test('pods/components/my-experience/component.js', function (assert) {
@@ -48,6 +48,11 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
   QUnit.test('pods/components/my-projects/component.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'pods/components/my-projects/component.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('pods/components/my-recommendations/component.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/components/my-recommendations/component.js should pass ESLint\n\n');
   });
 
   QUnit.test('pods/components/portfolio-header/component.js', function (assert) {
@@ -426,6 +431,35 @@ define('personal-portfolio/tests/integration/pods/components/my-projects/compone
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
+define('personal-portfolio/tests/integration/pods/components/my-recommendations/component-test', ['ember-qunit'], function (_emberQunit) {
+  'use strict';
+
+  (0, _emberQunit.moduleForComponent)('my-recommendations', 'Integration | Component | my recommendations', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      "id": "SpLkPrEN",
+      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-recommendations\"],false]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      "id": "MoL6QKtU",
+      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-recommendations\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
 define('personal-portfolio/tests/integration/pods/components/portfolio-header/component-test', ['ember-qunit'], function (_emberQunit) {
   'use strict';
 
@@ -544,6 +578,11 @@ define('personal-portfolio/tests/tests.lint-test', [], function () {
   QUnit.test('integration/pods/components/my-projects/component-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/pods/components/my-projects/component-test.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('integration/pods/components/my-recommendations/component-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/pods/components/my-recommendations/component-test.js should pass ESLint\n\n');
   });
 
   QUnit.test('integration/pods/components/portfolio-header/component-test.js', function (assert) {
