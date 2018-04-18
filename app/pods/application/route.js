@@ -44,7 +44,7 @@ export default Route.extend({
                     ]
                 },
                 {
-                    "company": "Ciena - Newtwork Health Prediction",
+                    "company": "Ciena - Network Health Prediction",
                     "position": "Software Developer",
                     "website": "http://ciena.com",
                     "startDate": "2017-05-01",
