@@ -69,7 +69,7 @@ export default Route.extend({
                         "Developed features for Web Applications using popular industry tools",
                         "Experience with popular build, automation, and development interfaces",
                         "Integration of new UI features with large long standing codebases",
-                        "Interaction with several derivitives of SQL and similar database types"
+                        "Interaction with several derivatives of SQL and similar database types"
                     ]
                 },
                 {
