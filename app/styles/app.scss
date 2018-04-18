@@ -62,6 +62,7 @@ $material-color-light-blue-a400:  #00b0ff !default;
 $material-color-light-blue-a700:  #0091ea !default;
 
 $shadow: rgba(0, 0, 0, 0.281);
+$nav: rgba(97, 97, 97, 0.281);
 
 .body{
     width:100%;
@@ -83,7 +84,7 @@ md-tabs {
     top: 0;
     width: 100%;
     z-index:2;
-    background-color: $shadow;
+    background-color: $nav;
     box-shadow: 0px 0px 5px inset $shadow;
 }
 
@@ -93,7 +94,7 @@ md-tabs {
     }
     .particles {
         filter: blur(0px);
-        background-color: rgba(26, 37, 47,0);
+        background-color: rgba(26, 37, 47,1);
         background-image: url('/headerbg.jpg');
         height: 90VH; 
         background-attachment: fixed;
@@ -106,8 +107,19 @@ md-tabs {
         width: 100%;
         height: 5%;
         position: absolute;
+        justify-content: space-between;
         top: 0;
         left: 0;
+    }
+    .scroll-down {
+        min-height: 10VH;
+        width: 10VH;
+        background-color: rgba(255,255,255,0.4);
+    }
+    .scroll-down:hover {
+        min-height: 10VH;
+        width: 10VH;
+        background-color: rgba(82, 82, 82, 0.4);
     }
     .center {
         margin: auto;
