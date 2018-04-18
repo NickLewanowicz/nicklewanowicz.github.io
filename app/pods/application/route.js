@@ -8,7 +8,7 @@ export default Route.extend({
                 "position": "Software Developer"
             },
             "about": {
-                "description": "Seasoned Software Engineer with 26 months of professional work experience. Primarily focused on Web Development with Ember.js. Currently working as a full-stack developer with Ember and Go as well as contract-based mobile application development for Android and iOS using React Native. Currently completing a Bachelor of Computer Science with Honours, specializing in Software Engineering in 4th year."
+                "description": "Seasoned Software Engineer with over 2 years of professional work experience. Primarily focused on Web Development with Ember.js. Currently working as a full-stack developer with Ember and Go as well as contract-based mobile application development for Android and iOS using React Native. Currently completing a Bachelor of Computer Science with Honours, specializing in Software Engineering in 4th year."
             },
             "education": [
                 {
