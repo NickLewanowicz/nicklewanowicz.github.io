@@ -13,9 +13,9 @@ export default Route.extend({
             "education": [
                 {
                     "institution": "Carleton University",
-                    "area": "Honours Computer Science: Specializing in Software Engineering",
+                    "area": "Honors Computer Science: Specializing in Software Engineering",
                     "extras": ["Cooperative Education", " Minor in Psychology"],
-                    "studyType": "B.A.",
+                    "studyType": "B.C.S.",
                     "highlights": [
                         "Excelled in programs related to discrete mathematics, artificial intelligence, and statistics.",
                         "Awarded G. Robertson Scholarship for acedemic excellence.",
@@ -34,7 +34,7 @@ export default Route.extend({
                     "website": "https://accedian.com/",
                     "startDate": "2018-01-8",
                     "endDate": "Present",
-                    "summary": "Worked within a brand new software division of Accedian breaking new ground in netowork data visualization both front and backend.",
+                    "summary": "Worked within a brand new software division of Accedian breaking new ground in network data visualization both front and backend.",
                     "highlights": [
                         "Used Ember.js to rapidly create and prototype web apps.",
                         "Align new feature implementation with customer spec.",
@@ -49,7 +49,7 @@ export default Route.extend({
                     "website": "http://ciena.com",
                     "startDate": "2017-05-01",
                     "endDate": "2018-01-1",
-                    "summary": "Worked with amazing data analytics and ML talent on the front and back end of a brand new network health predition tool.",
+                    "summary": "Worked with amazing data analytics and ML talent on the front and back end of a brand new network health prediction tool.",
                     "highlights": [
                         "Used Ember.js and D3 to implement visualizations of complex kernel density estimates and random forest models.",
                         "Leveraged data driven user interfaces to create flexible and powerful single page applications.",
@@ -63,7 +63,7 @@ export default Route.extend({
                     "website": "https://www.versaterm.com/",
                     "startDate": "2017-05-01",
                     "endDate": "2017-09-1",
-                    "summary": "Developed along side of extremely talented designers and testers, refining and designing popular applications that would be used both internally and externally.",
+                    "summary": "Worked on software used by tens of thousands of emergency service dispatchers across North America.",
                     "highlights": [
                         "Integrated new web frameworks into exsisting C# and .NET stack",
                         "Developed features for Web Applications using popular industry tools",
@@ -93,7 +93,7 @@ export default Route.extend({
                     "endDate": "2015-11-01",
                     "summary": "Created and managed a successfull online business reaching tens of thousands of customers.",
                     "highlights": [
-                        "Fostered a community for people all over the world to congreagate and play.",
+                        "Fostered a community for people all over the world to congregate and play.",
                         "Leveraged viral marketing and gorilla social media tactics to reach a wider audience.",
                         "Raised monthly revenue to over $30 000 by leveraging online influencers and partnerships."
                     ]
@@ -251,7 +251,7 @@ export default Route.extend({
                     "name": "Overboard Ai",
                     "url": "https://github.com/NickLewanowicz/overboard-ai",
                     "demo": "https://nicklewanowicz.github.io/overboard-ai/",
-                    "tldr": "MiniMax Ai to compete in Overboard",
+                    "tldr": "MiniMax Ai to compete in Overboard game",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "OverboardAi.svg",
                     "row": 3,
@@ -298,7 +298,7 @@ export default Route.extend({
                         },
                         {
                             "network": "LinkedIn",
-                            "username": "Seena Rowhani",
+                            "username": "Nicholas Lewanowicz",
                             "url": "www.linkedin.com/in/nicklewanowicz",
                             "icon": "fa-linkedin"
                         },
