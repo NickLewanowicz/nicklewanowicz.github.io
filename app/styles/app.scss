@@ -88,11 +88,18 @@ md-tabs {
 }
 
 #header {
-    
+    .header-bg {
+        
+    }
     .particles {
         filter: blur(0px);
-        background-color: #1A252F;
-        min-height: 400px;
+        background-color: rgba(26, 37, 47,0);
+        background-image: url('/headerbg.jpg');
+        height: 90VH; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .header-info {
         padding-top: 250px;
