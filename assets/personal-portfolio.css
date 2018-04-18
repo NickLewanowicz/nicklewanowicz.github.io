@@ -20051,9 +20051,9 @@ md-tabs {
           box-shadow: 0px 0px 5px inset rgba(0, 0, 0, 0.281); }
 
 #header .particles {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-  background-color: #4fc3f7;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  background-color: #1A252F;
   min-height: 400px; }
 
 #header .header-info {
