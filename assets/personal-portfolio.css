@@ -20130,6 +20130,28 @@ md-tabs {
     font-size: 1.2rem;
     text-align: left;
     text-indent: 10px; }
+  #about .profile-photo {
+    position: relative;
+    margin: 0 auto;
+    height: 160px;
+    width: 160px;
+    border: 5px solid #FFFFFF;
+    border-radius: 500px;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25); }
+    #about .profile-photo:after {
+      border-radius: 500px;
+      -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.25) inset;
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.25) inset;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 150px;
+      height: 150px; }
+    #about .profile-photo img {
+      border-radius: 500px;
+      width: 100%; }
 
 #experience {
   background-color: #e3f2fd; }

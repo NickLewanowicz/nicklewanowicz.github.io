@@ -3370,7 +3370,7 @@ define("personal-portfolio/pods/components/about-me/template", ["exports"], func
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "HLSGyHzQ", "block": "{\"symbols\":[\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"about\"],[9,\"class\",\"layout-column layout-sm-column\"],[7],[0,\"\\n    \"],[6,\"h1\"],[9,\"class\",\"center flex-30\"],[7],[0,\"\\n        About Me\\n    \"],[8],[0,\"\\n    \"],[6,\"p\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"description\"]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/about-me/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "cyOPjsic", "block": "{\"symbols\":[\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"about\"],[9,\"class\",\"layout-column layout-sm-column\"],[7],[0,\"\\n    \"],[6,\"div\"],[9,\"class\",\"profile-photo\"],[7],[0,\"\\n        \"],[6,\"img\"],[9,\"alt\",\"Nicholas Lewanowicz\"],[9,\"src\",\"profile_photo.jpg\"],[7],[8],[0,\"\\n    \"],[8],[0,\"\\n    \"],[6,\"h1\"],[9,\"class\",\"center flex-30\"],[7],[0,\"\\n        About Me\\n    \"],[8],[0,\"\\n    \"],[6,\"p\"],[9,\"class\",\"center\"],[7],[1,[20,[\"config\",\"description\"]],false],[8],[0,\"\\n\"],[8],[0,\"\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/about-me/template.hbs" } });
 });
 define('personal-portfolio/pods/components/experience-element/component', ['exports'], function (exports) {
   'use strict';
@@ -4216,6 +4216,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+c735dc49"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+e4ece152"});
 }
 //# sourceMappingURL=personal-portfolio.map
