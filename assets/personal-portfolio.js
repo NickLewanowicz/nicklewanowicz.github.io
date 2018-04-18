@@ -3150,7 +3150,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "startDate": "2017-05-01",
                     "endDate": "2017-09-1",
                     "summary": "Worked on software used by tens of thousands of emergency service dispatchers across North America.",
-                    "highlights": ["Integrated new web frameworks into exsisting C# and .NET stack", "Developed features for Web Applications using popular industry tools", "Experience with popular build, automation, and development interfaces", "Integration of new UI features with large long standing codebases", "Interaction with several derivitives of SQL and similar database types"]
+                    "highlights": ["Integrated new web frameworks into exsisting C# and .NET stack", "Developed features for Web Applications using popular industry tools", "Experience with popular build, automation, and development interfaces", "Integration of new UI features with large long standing codebases", "Interaction with several derivatives of SQL and similar database types"]
                 }, {
                     "company": "Ciena - Frost Core",
                     "position": "Full Stack Software Developer",
@@ -4216,6 +4216,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+1f2b4d4b"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+7a8f9d07"});
 }
 //# sourceMappingURL=personal-portfolio.map
