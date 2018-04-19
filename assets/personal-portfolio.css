@@ -20127,6 +20127,8 @@ md-tabs {
     color: white;
     text-shadow: 0px 0px 10px #000000; }
   #about p {
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     text-align: left;
     text-indent: 10px; }
@@ -20276,6 +20278,27 @@ md-tabs {
   100% {
     top: 93%;
     right: 0; } }
+
+#recommendation .recommendation-card {
+  background-color: #bbdefb;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  max-width: 500px;
+  height: 100%; }
+  #recommendation .recommendation-card .title {
+    margin-top: 1.5rem;
+    width: 100%; }
+  #recommendation .recommendation-card .profile-photo {
+    position: relative;
+    margin: 0 auto;
+    height: 9VH;
+    width: 10VH;
+    border: 5px solid #FFFFFF;
+    border-radius: 10VH; }
+    #recommendation .recommendation-card .profile-photo img {
+      border-radius: 8VH;
+      width: 100%; }
 
 img {
   max-width: 100%; }

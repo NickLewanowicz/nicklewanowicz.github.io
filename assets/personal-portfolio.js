@@ -3168,6 +3168,21 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "summary": "Created and managed a successfull online business reaching tens of thousands of customers.",
                     "highlights": ["Fostered a community for people all over the world to congregate and play.", "Leveraged viral marketing and gorilla social media tactics to reach a wider audience.", "Raised monthly revenue to over $30 000 by leveraging online influencers and partnerships."]
                 }],
+                "recommendations": [{
+                    "person": "Steven Glanzer",
+                    "position": "UI Manager / Architect at Accedian",
+                    "relationship": "Managed Nicholas Directly",
+                    "letter": "Nick has, hands down, the craziest work ethic I've ever seen - this coming from someone that routinely pulls 60-70 hour weeks. During an 8 month co-op term Nick learned the nuances of a complex web framework (Ember), designed and developed a full stack application from basic requirements and became the main developer for another front end application for big data analytics. Nick was so impressive in this role that we trusted him to carry the next stage of the project forward rather than investing in much more expensive senior Ember contractors. Nick has crushed every challenge to date and I can't wait to see what he'll accomplish in the future, I have no doubt it will dwarf my already high expectations.",
+                    "image": "steven_glanzer.jpeg",
+                    "link": "https://www.linkedin.com/in/steven-glanzer-47a4a811/"
+                }, {
+                    "person": "David Cote",
+                    "position": "Senior Manager - Big Data & Machine Learning at Ciena",
+                    "relationship": "Managed Nicholas Directly",
+                    "letter": "Nick is smart, reliable and very hard-working. He has done an excellent job at programming Javascript user interfaces for customer-facing applications developed at Ciena, when we started the new Blue Planet Analytics product line. I am happy to recommend Nick!",
+                    "image": "david_cote.jpeg",
+                    "link": "https://www.linkedin.com/in/david-cote-798b8689/"
+                }],
                 "skills": [{
                     "name": "Web Development",
                     "level": "advanced",
@@ -3247,6 +3262,24 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "row": 6,
                     "col": 6
                 }, {
+                    "name": "Reinforced Learning Visualizer Ai",
+                    "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
+                    "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
+                    "tldr": "Demonstration of Learning Automata in a sandbox",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "LAAi.svg",
+                    "row": 4,
+                    "col": 6
+                }, {
+                    "name": "BetterPassword Manager",
+                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
+                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
+                    "tldr": "Phrase based password research system",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "better-password.svg",
+                    "row": 3,
+                    "col": 6
+                }, {
                     "name": "typ3",
                     "url": "https://github.com/MyCryptoHQ/typ3",
                     "tldr": "Ethereum focused development tool from EthWaterloo 2017",
@@ -3278,24 +3311,6 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "tldr": "MiniMax Ai to compete in Overboard game",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "OverboardAi.svg",
-                    "row": 3,
-                    "col": 6
-                }, {
-                    "name": "Reinforced Learning Visualizer Ai",
-                    "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
-                    "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
-                    "tldr": "Demonstration of Learning Automata in a sandbox",
-                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "LAAi.svg",
-                    "row": 4,
-                    "col": 6
-                }, {
-                    "name": "BetterPassword Manager",
-                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
-                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
-                    "tldr": "Phrase based password research system",
-                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "better-password.svg",
                     "row": 3,
                     "col": 6
                 }, {
@@ -3509,7 +3524,7 @@ define("personal-portfolio/pods/components/my-recommendations/template", ["expor
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "NPvS+uH9", "block": "{\"symbols\":[\"&default\"],\"statements\":[[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-recommendations/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "vdn8/wLE", "block": "{\"symbols\":[\"recommendation\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"recommendation\"],[9,\"class\",\"layout-gt-sm-row layout-sm-column layout-align-center-start\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"div\"],[9,\"class\",\"recommendation-card layout-column\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"layout-row layout-align-start-start\"],[7],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"profile-photo\"],[7],[6,\"img\"],[10,\"alt\",[19,1,[\"person\"]],null],[10,\"src\",[19,1,[\"image\"]],null],[7],[8],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"layout-column layout-align-center-start flex-80\"],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"title\"],[7],[1,[19,1,[\"person\"]],false],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[0,\" \"],[6,\"b\"],[7],[1,[19,1,[\"position\"]],false],[8],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[6,\"i\"],[7],[1,[19,1,[\"relationship\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"p\"],[7],[1,[19,1,[\"letter\"]],false],[8],[0,\"\\n            \"],[6,\"i\"],[7],[6,\"a\"],[9,\"target\",\"_blank\"],[10,\"href\",[19,1,[\"link\"]],null],[7],[0,\"View on LinkedIn\"],[8],[8],[0,\"\\n        \"],[8],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\\n\"],[11,2]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-recommendations/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-header/component', ['exports'], function (exports) {
   'use strict';
@@ -3557,7 +3572,7 @@ define("personal-portfolio/pods/index/template", ["exports"], function (exports)
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "JQK9ZngV", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"index\"],[7],[0,\"\\n    \"],[1,[25,\"portfolio-header\",null,[[\"config\"],[[20,[\"model\",\"header\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"about-me\",null,[[\"config\"],[[20,[\"model\",\"about\"]]]]],false],[0,\"    \\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-education\",null,[[\"config\"],[[20,[\"model\",\"education\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-experience\",null,[[\"config\"],[[20,[\"model\",\"experiences\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-projects\",null,[[\"config\"],[[20,[\"model\",\"projects\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/index/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "wd2uAlVF", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"index\"],[7],[0,\"\\n    \"],[1,[25,\"portfolio-header\",null,[[\"config\"],[[20,[\"model\",\"header\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"about-me\",null,[[\"config\"],[[20,[\"model\",\"about\"]]]]],false],[0,\"    \\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-education\",null,[[\"config\"],[[20,[\"model\",\"education\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-experience\",null,[[\"config\"],[[20,[\"model\",\"experiences\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-recommendations\",null,[[\"config\"],[[20,[\"model\",\"recommendations\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-projects\",null,[[\"config\"],[[20,[\"model\",\"projects\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/index/template.hbs" } });
 });
 define('personal-portfolio/pods/move-to/service', ['exports'], function (exports) {
   'use strict';
@@ -4224,6 +4239,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+86b26d24"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+26651ff0"});
 }
 //# sourceMappingURL=personal-portfolio.map
