@@ -20062,7 +20062,7 @@ md-tabs {
   background-size: cover; }
 
 #header .header-info {
-  padding-top: 250px;
+  padding-top: 20VH;
   width: 100%;
   height: 100VH;
   position: absolute;
@@ -20114,7 +20114,7 @@ md-tabs {
     /* WebKit/Blink Browsers */ }
 
 #about {
-  padding: 10%;
+  padding: 5%;
   background-color: #e3f2fd; }
   #about .center {
     margin: auto; }
@@ -20198,14 +20198,12 @@ md-tabs {
       margin: 1rem auto 0 auto; }
 
 #education {
-  background-color: #cfd8dc;
-  padding: 4rem 1rem 1rem 1rem; }
+  background-color: #b3e5fc;
+  padding: 0rem 1rem 0rem 1rem; }
   #education .education-card {
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem 2rem 2rem 2rem;
-    margin-bottom: 5rem; }
+            align-items: center; }
     #education .education-card h2, #education .education-card h3, #education .education-card .extras {
       margin: 1rem auto 0 auto; }
   #education .highlights {
@@ -20248,8 +20246,8 @@ md-tabs {
     #projects .project-tile img {
       max-height: 5VH; }
   #projects md-grid-list {
-    width: 250VH;
-    height: 60VH; }
+    width: 100VW;
+    height: 50VH; }
   #projects .scroll-indicator {
     z-index: 2;
     position: absolute;
