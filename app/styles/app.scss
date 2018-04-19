@@ -156,7 +156,7 @@ md-tabs {
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: cover;
-    padding: 10%;
+    padding: 5%;
 
     background-color: $material-color-blue-050;
     .center {
@@ -292,20 +292,20 @@ md-tabs {
 }
 
 #education {
-    background-color: $material-color-blue-grey-100;
-    padding: 4rem 1rem 1rem 1rem ;
+    background-color: $material-color-light-blue-100;
+    padding: 0rem 1rem 0rem 1rem ;
     .education-card {
         align-items: center;
         h2, h3, .extras {
             margin: 1rem auto 0 auto;
         }
         //-webkit-box-shadow: 10px 10px 60px 0px #888888;
-        padding: 1rem 2rem 2rem 2rem;
+        //padding: 1rem 2rem 2rem 2rem;
         //border-radius: 0.5rem;
         //border-style: solid;
         //border-color: $color3;
         //border-width: 0.2rem;
-        margin-bottom: 5rem;
+        //margin-bottom: 5rem;
     }
     .highlights {
         margin-top: 0.3rem;
@@ -319,6 +319,7 @@ md-tabs {
 
 #projects {
     background: $color3;
+    
     a:hover {
         .project-tile {
             //box-shadow: 10px 10px 100px 0px #888888;
@@ -375,9 +376,15 @@ md-tabs {
     .project-grid {
         //margin: 2rem;
     }
+    // .collapsed{
+    //     md-grid-list {
+    //         width: 100VW;
+    //         height: 50VH;
+    //     }
+    // }
     md-grid-list {
-        width: 250VH;
-        height: 60VH;
+        width: 100VW;
+        height: 50VH;
     }
     .scroll-indicator {	
         z-index: 2;
