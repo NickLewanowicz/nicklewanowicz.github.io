@@ -1,1 +1,18 @@
+<div id="recommendation" class="layout-gt-sm-row layout-sm-column layout-align-center-start">
+    {{#each config as |recommendation|}}
+        <div class="recommendation-card layout-column">
+            <div class="layout-row layout-align-start-start">
+                <div class="profile-photo"><img alt={{recommendation.person}} src={{recommendation.image}}></div>
+                <div class="layout-column layout-align-center-start flex-80">
+                    <span class="title">{{recommendation.person}}</span>
+                    <span> <b>{{recommendation.position}}</b></span>
+                    <span><i>{{recommendation.relationship}}</i></span>
+                </div>
+            </div>
+            <p>{{recommendation.letter}}</p>
+            <i><a target="_blank" href={{recommendation.link}}>View on LinkedIn</a></i>
+        </div>
+    {{/each}}
+</div>
+
 {{yield}}
