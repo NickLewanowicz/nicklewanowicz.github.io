@@ -99,6 +99,25 @@ export default Route.extend({
                     ]
                 }
             ],
+            "recommendations": [
+                {
+                    "person": "Steven Glanzer",
+                    "position": "UI Manager / Architect at Accedian",
+                    "relationship": "Managed Nicholas Directly",
+                    "letter": "Nick has, hands down, the craziest work ethic I've ever seen - this coming from someone that routinely pulls 60-70 hour weeks. During an 8 month co-op term Nick learned the nuances of a complex web framework (Ember), designed and developed a full stack application from basic requirements and became the main developer for another front end application for big data analytics. Nick was so impressive in this role that we trusted him to carry the next stage of the project forward rather than investing in much more expensive senior Ember contractors. Nick has crushed every challenge to date and I can't wait to see what he'll accomplish in the future, I have no doubt it will dwarf my already high expectations.",
+                    "image": "steven_glanzer.jpeg",
+                    "link": "https://www.linkedin.com/in/steven-glanzer-47a4a811/"
+                },
+                {
+                    "person": "David Cote",
+                    "position": "Senior Manager - Big Data & Machine Learning at Ciena",
+                    "relationship": "Managed Nicholas Directly",
+                    "letter": "Nick is smart, reliable and very hard-working. He has done an excellent job at programming Javascript user interfaces for customer-facing applications developed at Ciena, when we started the new Blue Planet Analytics product line. I am happy to recommend Nick!",
+                    "image": "david_cote.jpeg",
+                    "link": "https://www.linkedin.com/in/david-cote-798b8689/"
+                }
+
+            ],
             "skills": [
                 {
                     "name": "Web Development",
@@ -220,6 +239,26 @@ export default Route.extend({
                     "col": 6
                 },
                 {
+                    "name": "Reinforced Learning Visualizer Ai",
+                    "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
+                    "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
+                    "tldr": "Demonstration of Learning Automata in a sandbox",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "LAAi.svg",
+                    "row": 4,
+                    "col": 6
+                },
+                {
+                    "name": "BetterPassword Manager",
+                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
+                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
+                    "tldr": "Phrase based password research system",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "better-password.svg",
+                    "row": 3,
+                    "col": 6
+                },
+                {
                     "name": "typ3",
                     "url": "https://github.com/MyCryptoHQ/typ3",
                     "tldr": "Ethereum focused development tool from EthWaterloo 2017",
@@ -254,26 +293,6 @@ export default Route.extend({
                     "tldr": "MiniMax Ai to compete in Overboard game",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
                     "icon": "OverboardAi.svg",
-                    "row": 3,
-                    "col": 6
-                },
-                {
-                    "name": "Reinforced Learning Visualizer Ai",
-                    "url": "https://github.com/NickLewanowicz/reinforced-learning-ai",
-                    "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
-                    "tldr": "Demonstration of Learning Automata in a sandbox",
-                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "LAAi.svg",
-                    "row": 4,
-                    "col": 6
-                },
-                {
-                    "name": "BetterPassword Manager",
-                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
-                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
-                    "tldr": "Phrase based password research system",
-                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "better-password.svg",
                     "row": 3,
                     "col": 6
                 },
