@@ -15,7 +15,8 @@
     "lint:js": "eslint ./*.js app config lib server tests",
     "start": "ember serve",
     "test": "ember test",
-    "deploy": "ember build && ember github-pages:commit --branch \"master\" --environment \"development\" --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" && git push origin master:master"
+    "deploy": "ember build && ember github-pages:commit --branch \"master\" --environment \"development\" --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" && git push origin master:master",
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -51,9 +52,11 @@
     "loader.js": "^4.2.3"
   },
   "dependencies": {
-    "bower": "1.8.0"
+    "bower": "1.8.0",
+    "@bower_components/particles.js": "VincentGarreau/particles.js#^2.0.0"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "^4.5 || 6.* || >= 7.*",
+    "yarn": ">= 1.0.0"
   }
 }

@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@bower_components/particles.js@VincentGarreau/particles.js#^2.0.0":
+  version "2.0.0"
+  resolved "https://codeload.github.com/VincentGarreau/particles.js/tar.gz/172f5c0890533dd70f364cb7c1a2f0bc04741a49"
+
 "@ember/test-helpers@^0.7.18":
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-0.7.20.tgz#488b1c8ef23626f8831e5cb750ffca86e017e6dc"
@@ -1119,6 +1123,10 @@ bower-config@^1.3.0:
 bower-endpoint-parser@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/bower-endpoint-parser/-/bower-endpoint-parser-0.2.2.tgz#00b565adbfab6f2d35addde977e97962acbcb3f6"
+
+bower@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/bower/-/bower-1.8.0.tgz#55dbebef0ad9155382d9e9d3e497c1372345b44a"
 
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.11"
