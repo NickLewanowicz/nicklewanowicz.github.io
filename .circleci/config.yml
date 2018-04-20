@@ -33,7 +33,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: yarn install bower
+      - run: yarn add bower
 
       - save_cache:
           paths:
