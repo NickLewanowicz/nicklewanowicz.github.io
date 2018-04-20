@@ -33,13 +33,10 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: npm install bower
-      - run: bower install
 
       - save_cache:
           paths:
             - node_modules
-            - bower_components
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
