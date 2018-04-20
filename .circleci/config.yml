@@ -39,6 +39,7 @@ jobs:
       - save_cache:
           paths:
             - node_modules
+            - bower_components
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
