@@ -34,7 +34,7 @@ jobs:
       # install the latest version of Chrome
       - run: .circleci/upgrade_chrome.sh
       - run: npm rebuild node-sass --force
-      - run: yarn install
+      - run: yarn install --check-files
 
       - save_cache:
           paths:
