@@ -249,32 +249,14 @@ export default Route.extend({
                     "col": 6
                 },
                 {
-                    "name": "BetterPassword Manager",
-                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
-                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
-                    "tldr": "Phrase based password research system",
+                    "name": "Network Diagnostic Ai",
+                    "url": "https://github.com/NickLewanowicz/root-cause-ai",
+                    "demo": "https://nicklewanowicz.github.io/root-cause-ai/",
+                    "tldr": "Heuristic search on a graph to find deficiencies",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "better-password.svg",
-                    "row": 3,
-                    "col": 6
-                },
-                {
-                    "name": "typ3",
-                    "url": "https://github.com/MyCryptoHQ/typ3",
-                    "tldr": "Ethereum focused development tool from EthWaterloo 2017",
-                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "typ3.svg",
+                    "icon": "PegAi.svg",
                     "row": 4,
-                    "col": 6
-                },
-                {
-                    "name": "Scholarchain",
-                    "url": "https://github.com/NickLewanowicz/Scholarchain",
-                    "tldr": "CUHacking 2017 first attempt at a decentralized application",
-                    "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "Scholarchain.svg",
-                    "row": 3,
-                    "col": 6
+                    "col": 5
                 },
                 {
                     "name": "Peg Solitaire Ai",
@@ -304,6 +286,34 @@ export default Route.extend({
                     "icon": "extendedLs.svg",
                     "row": 3,
                     "col": 4
+                },
+                {
+                    "name": "BetterPassword Manager",
+                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
+                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
+                    "tldr": "Phrase based password research system",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "better-password.svg",
+                    "row": 3,
+                    "col": 6
+                },
+                {
+                    "name": "typ3",
+                    "url": "https://github.com/MyCryptoHQ/typ3",
+                    "tldr": "Ethereum focused development tool from EthWaterloo 2017",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "typ3.svg",
+                    "row": 4,
+                    "col": 6
+                },
+                {
+                    "name": "Scholarchain",
+                    "url": "https://github.com/NickLewanowicz/Scholarchain",
+                    "tldr": "CUHacking 2017 first attempt at a decentralized application",
+                    "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
+                    "icon": "Scholarchain.svg",
+                    "row": 3,
+                    "col": 6
                 },
             ],
             "footer": {
