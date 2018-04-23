@@ -20054,7 +20054,7 @@ md-tabs {
   -webkit-filter: blur(0px);
           filter: blur(0px);
   background-color: #1a252f;
-  background-image: url("/headerbg.jpg");
+  background-image: url("/assets/headerbg.jpg");
   height: 100VH;
   background-attachment: fixed;
   background-position: center;
