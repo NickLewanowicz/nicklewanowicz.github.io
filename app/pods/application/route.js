@@ -105,7 +105,7 @@ export default Route.extend({
                     "position": "UI Manager / Architect at Accedian",
                     "relationship": "Managed Nicholas Directly",
                     "letter": "Nick has, hands down, the craziest work ethic I've ever seen - this coming from someone that routinely pulls 60-70 hour weeks. During an 8 month co-op term Nick learned the nuances of a complex web framework (Ember), designed and developed a full stack application from basic requirements and became the main developer for another front end application for big data analytics. Nick was so impressive in this role that we trusted him to carry the next stage of the project forward rather than investing in much more expensive senior Ember contractors. Nick has crushed every challenge to date and I can't wait to see what he'll accomplish in the future, I have no doubt it will dwarf my already high expectations.",
-                    "image": "steven_glanzer.jpeg",
+                    "image": "/assets/steven_glanzer.jpeg",
                     "link": "https://www.linkedin.com/in/steven-glanzer-47a4a811/"
                 },
                 {
@@ -113,7 +113,7 @@ export default Route.extend({
                     "position": "Senior Manager - Big Data & Machine Learning at Ciena",
                     "relationship": "Managed Nicholas Directly",
                     "letter": "Nick is smart, reliable and very hard-working. He has done an excellent job at programming Javascript user interfaces for customer-facing applications developed at Ciena, when we started the new Blue Planet Analytics product line. I am happy to recommend Nick!",
-                    "image": "david_cote.jpeg",
+                    "image": "/assets/david_cote.jpeg",
                     "link": "https://www.linkedin.com/in/david-cote-798b8689/"
                 }
 
@@ -225,7 +225,7 @@ export default Route.extend({
                     "url": "https://github.com/NickLewanowicz/trendify-web",
                     "tldr": "Award Winning CUHacking 2018 web socket based game",
                     "description": "Built using: express, socket.io, d3, Ember.js",
-                    "icon": "Trendify.png",
+                    "icon": "/assets/Trendify.png",
                     "row": 10,
                     "col": 8
                 },
@@ -234,7 +234,7 @@ export default Route.extend({
                     "url": "https://github.com/NickLewanowicz/ParkSpace",
                     "tldr": "Production ready iOS app to rent parking spaces",
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "parkspace.png",
+                    "icon": "/assets/parkspace.png",
                     "row": 6,
                     "col": 6
                 },
@@ -244,7 +244,7 @@ export default Route.extend({
                     "demo": "https://nicklewanowicz.github.io/reinforced-learning-ai/",
                     "tldr": "Demonstration of Learning Automata in a sandbox",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "LAAi.svg",
+                    "icon": "/assets/LAAi.svg",
                     "row": 4,
                     "col": 6
                 },
@@ -254,7 +254,7 @@ export default Route.extend({
                     "demo": "https://nicklewanowicz.github.io/root-cause-ai/",
                     "tldr": "Heuristic search on a graph to find deficiencies",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "PegAi.svg",
+                    "icon": "/assets/PegAi.svg",
                     "row": 4,
                     "col": 5
                 },
@@ -264,7 +264,7 @@ export default Route.extend({
                     "demo": "https://nicklewanowicz.github.io/peg-solitaire-ai/",
                     "tldr": "Ai to solve French Peg Solitaire",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "PegAi.svg",
+                    "icon": "/assets/PegAi.svg",
                     "row": 4,
                     "col": 5
                 },
@@ -274,7 +274,7 @@ export default Route.extend({
                     "demo": "https://nicklewanowicz.github.io/overboard-ai/",
                     "tldr": "MiniMax Ai to compete in Overboard game",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "OverboardAi.svg",
+                    "icon": "/assets/OverboardAi.svg",
                     "row": 3,
                     "col": 6
                 },
@@ -283,7 +283,7 @@ export default Route.extend({
                     "url": "https://github.com/NickLewanowicz/extended-ls",
                     "tldr": "Modification to Ubuntu's LS command",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "extendedLs.svg",
+                    "icon": "/assets/extendedLs.svg",
                     "row": 3,
                     "col": 4
                 },
@@ -293,7 +293,7 @@ export default Route.extend({
                     "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
                     "tldr": "Phrase based password research system",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "better-password.svg",
+                    "icon": "/assets/better-password.svg",
                     "row": 3,
                     "col": 6
                 },
@@ -302,7 +302,7 @@ export default Route.extend({
                     "url": "https://github.com/MyCryptoHQ/typ3",
                     "tldr": "Ethereum focused development tool from EthWaterloo 2017",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "typ3.svg",
+                    "icon": "/assets/typ3.svg",
                     "row": 4,
                     "col": 6
                 },
@@ -311,7 +311,7 @@ export default Route.extend({
                     "url": "https://github.com/NickLewanowicz/Scholarchain",
                     "tldr": "CUHacking 2017 first attempt at a decentralized application",
                     "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "Scholarchain.svg",
+                    "icon": "/assets/Scholarchain.svg",
                     "row": 3,
                     "col": 6
                 },
