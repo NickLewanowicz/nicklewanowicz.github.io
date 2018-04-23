@@ -20231,11 +20231,24 @@ md-tabs {
     background-color: #b3e5fc; }
   #projects .color6 {
     background-color: #81d4fa; }
+  #projects .project-grid {
+    max-height: 100VH;
+    width: 100VW; }
   #projects .project-tile {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: black; }
-    #projects .project-tile .project-content {
-      margin-left: 2rem;
-      width: 100%; }
+    #projects .project-tile .header {
+      margin: 1rem;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start; }
+    #projects .project-tile .tldr {
+      max-height: 50%; }
+    #projects .project-tile .options {
+      margin: 0.5rem; }
     #projects .project-tile h1 {
       margin-top: 1rem;
       font-size: 1rem;
@@ -20247,9 +20260,6 @@ md-tabs {
       text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
     #projects .project-tile img {
       max-height: 5VH; }
-  #projects md-grid-list {
-    width: 100VW;
-    height: 50VH; }
   #projects .scroll-indicator {
     z-index: 2;
     position: absolute;
@@ -20299,6 +20309,11 @@ md-tabs {
     #recommendation .recommendation-card .profile-photo img {
       border-radius: 8VH;
       width: 100%; }
+
+#wip {
+  margin-top: 2rem; }
+  #wip h1 {
+    text-align: center; }
 
 img {
   max-width: 100%; }

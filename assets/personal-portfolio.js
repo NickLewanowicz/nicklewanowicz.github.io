@@ -3271,30 +3271,14 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "row": 4,
                     "col": 6
                 }, {
-                    "name": "BetterPassword Manager",
-                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
-                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
-                    "tldr": "Phrase based password research system",
+                    "name": "Network Diagnostic Ai",
+                    "url": "https://github.com/NickLewanowicz/root-cause-ai",
+                    "demo": "https://nicklewanowicz.github.io/root-cause-ai/",
+                    "tldr": "Heuristic search on a graph to find deficiencies",
                     "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "better-password.svg",
-                    "row": 3,
-                    "col": 6
-                }, {
-                    "name": "typ3",
-                    "url": "https://github.com/MyCryptoHQ/typ3",
-                    "tldr": "Ethereum focused development tool from EthWaterloo 2017",
-                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
-                    "icon": "typ3.svg",
+                    "icon": "PegAi.svg",
                     "row": 4,
-                    "col": 6
-                }, {
-                    "name": "Scholarchain",
-                    "url": "https://github.com/NickLewanowicz/Scholarchain",
-                    "tldr": "CUHacking 2017 first attempt at a decentralized application",
-                    "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
-                    "icon": "Scholarchain.svg",
-                    "row": 3,
-                    "col": 6
+                    "col": 5
                 }, {
                     "name": "Peg Solitaire Ai",
                     "url": "https://github.com/NickLewanowicz/peg-solitaire-ai",
@@ -3321,6 +3305,31 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "icon": "extendedLs.svg",
                     "row": 3,
                     "col": 4
+                }, {
+                    "name": "BetterPassword Manager",
+                    "url": "https://github.com/NickLewanowicz/BetterPassword-HCI",
+                    "demo": "https://nicklewanowicz.github.io/BetterPassword-HCI/",
+                    "tldr": "Phrase based password research system",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "better-password.svg",
+                    "row": 3,
+                    "col": 6
+                }, {
+                    "name": "typ3",
+                    "url": "https://github.com/MyCryptoHQ/typ3",
+                    "tldr": "Ethereum focused development tool from EthWaterloo 2017",
+                    "description": "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
+                    "icon": "typ3.svg",
+                    "row": 4,
+                    "col": 6
+                }, {
+                    "name": "Scholarchain",
+                    "url": "https://github.com/NickLewanowicz/Scholarchain",
+                    "tldr": "CUHacking 2017 first attempt at a decentralized application",
+                    "description": "Uses linux's proc virtual fs to persist information and metrics about the system, and uses urwid console interface to render it.",
+                    "icon": "Scholarchain.svg",
+                    "row": 3,
+                    "col": 6
                 }],
                 "footer": {
                     "social": {
@@ -3508,7 +3517,7 @@ define("personal-portfolio/pods/components/my-projects/template", ["exports"], f
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "7sg3k5+7", "block": "{\"symbols\":[\"grid\",\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \\n\"],[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-responsiveTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"class\",\"cols\",\"rowHeight\",\"gutter\"],[\"project-grid\",\"24\",\"fit\",\"0px\"]],{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"if\",[[25,\"lt\",[[19,3,[]],4],null]],null,{\"statements\":[[4,\"component\",[[19,1,[\"tile\"]]],[[\"class\",\"colspan\",\"rowspan\"],[[25,\"concat\",[\"project-tile dynamic color\",[25,\"mod\",[[19,3,[]],7],null]],null],12,1]],{\"statements\":[[0,\"            \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-start\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                \"],[6,\"img\"],[10,\"src\",[19,2,[\"icon\"]],null],[7],[8],[0,\"\\n                \"],[6,\"h1\"],[7],[1,[19,2,[\"name\"]],false],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"tldr flex\"],[7],[0,\"\\n                \"],[6,\"p\"],[7],[0,\"\\n                    \"],[6,\"b\"],[7],[1,[19,2,[\"tldr\"]],false],[8],[0,\"\\n                \"],[8],[0,\"\\n\"],[4,\"if\",[[19,2,[\"demo\"]]],null,{\"statements\":[[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,2,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,2,[\"url\"]],[25,\"not\",[[19,2,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n            \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[]},null]],\"parameters\":[2,3]},null]],\"parameters\":[1]},null]],\"parameters\":[]},null],[8],[0,\"\\n\\n\"],[11,4]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "zX2naRCJ", "block": "{\"symbols\":[\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[9,\"class\",\"project-grid layout-gt-md-row layout-column\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"if\",[[25,\"lt\",[[19,2,[]],4],null]],null,{\"statements\":[[0,\"            \"],[6,\"div\"],[10,\"class\",[25,\"concat\",[\"project-content layout-column layout-align-start project-tile dynamic color\",[25,\"mod\",[[19,2,[]],7],null]],null],null],[7],[0,\"\\n                \"],[6,\"div\"],[7],[0,\"\\n                    \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                        \"],[6,\"img\"],[10,\"src\",[19,1,[\"icon\"]],null],[9,\"height\",\"50\"],[7],[8],[0,\"\\n                        \"],[6,\"h1\"],[7],[1,[19,1,[\"name\"]],false],[8],[0,\"\\n                    \"],[8],[0,\"\\n                    \"],[6,\"p\"],[7],[6,\"b\"],[7],[1,[19,1,[\"tldr\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"options\"],[7],[0,\"\\n\"],[4,\"if\",[[19,1,[\"demo\"]]],null,{\"statements\":[[0,\"                    \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,1,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,1,[\"url\"]],[25,\"not\",[[19,1,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[1,2]},null],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,3]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
 });
 define('personal-portfolio/pods/components/my-recommendations/component', ['exports'], function (exports) {
   'use strict';
@@ -3524,7 +3533,7 @@ define("personal-portfolio/pods/components/my-recommendations/template", ["expor
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "vdn8/wLE", "block": "{\"symbols\":[\"recommendation\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"recommendation\"],[9,\"class\",\"layout-gt-sm-row layout-sm-column layout-align-center-start\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"div\"],[9,\"class\",\"recommendation-card layout-column\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"layout-row layout-align-start-start\"],[7],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"profile-photo\"],[7],[6,\"img\"],[10,\"alt\",[19,1,[\"person\"]],null],[10,\"src\",[19,1,[\"image\"]],null],[7],[8],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"layout-column layout-align-center-start flex-80\"],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"title\"],[7],[1,[19,1,[\"person\"]],false],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[0,\" \"],[6,\"b\"],[7],[1,[19,1,[\"position\"]],false],[8],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[6,\"i\"],[7],[1,[19,1,[\"relationship\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"p\"],[7],[1,[19,1,[\"letter\"]],false],[8],[0,\"\\n            \"],[6,\"i\"],[7],[6,\"a\"],[9,\"target\",\"_blank\"],[10,\"href\",[19,1,[\"link\"]],null],[7],[0,\"View on LinkedIn\"],[8],[8],[0,\"\\n        \"],[8],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\\n\"],[11,2]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-recommendations/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "3yubb1/8", "block": "{\"symbols\":[\"recommendation\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"recommendation\"],[9,\"class\",\"layout-gt-sm-row layout-sm-column layout-align-center-start\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"div\"],[9,\"class\",\"recommendation-card dynamic layout-column\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"layout-row layout-align-start-start\"],[7],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"profile-photo\"],[7],[6,\"img\"],[10,\"alt\",[19,1,[\"person\"]],null],[10,\"src\",[19,1,[\"image\"]],null],[7],[8],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"layout-column layout-align-center-start flex-80\"],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"title\"],[7],[1,[19,1,[\"person\"]],false],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[0,\" \"],[6,\"b\"],[7],[1,[19,1,[\"position\"]],false],[8],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[6,\"i\"],[7],[1,[19,1,[\"relationship\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"p\"],[7],[1,[19,1,[\"letter\"]],false],[8],[0,\"\\n            \"],[6,\"i\"],[7],[6,\"a\"],[9,\"target\",\"_blank\"],[10,\"href\",[19,1,[\"link\"]],null],[7],[0,\"View on LinkedIn\"],[8],[8],[0,\"\\n        \"],[8],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\\n\"],[11,2]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-recommendations/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-header/component', ['exports'], function (exports) {
   'use strict';
@@ -3558,6 +3567,22 @@ define("personal-portfolio/pods/components/portfolio-menu/template", ["exports"]
   });
   exports.default = Ember.HTMLBars.template({ "id": "rez6Sn8c", "block": "{\"symbols\":[\"tabs\",\"section\",\"&default\"],\"statements\":[[4,\"paper-tabs\",null,[[\"center\",\"stretch\",\"borderBottom\",\"selected\",\"onChange\"],[true,true,[20,[\"borderBottom\"]],[20,[\"selectedTab\"]],[25,\"action\",[[19,0,[]],[25,\"mut\",[[20,[\"selectedBasicTab\"]]],null]],null]]],{\"statements\":[[4,\"each\",[[20,[\"config\",\"sections\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"tab\"]]],[[\"href\"],[[19,2,[\"href\"]]]],{\"statements\":[[0,\"            \"],[1,[19,2,[\"title\"]],false],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[2]},null]],\"parameters\":[1]},null],[0,\"\\n\"],[0,\"\\n\"],[11,3]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/portfolio-menu/template.hbs" } });
 });
+define('personal-portfolio/pods/components/wip-section/component', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({});
+});
+define("personal-portfolio/pods/components/wip-section/template", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "ENDMkK/f", "block": "{\"symbols\":[\"&default\"],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"id\",\"wip\"],[9,\"class\",\"layout-column layout-align-center\"],[7],[0,\"\\n    \"],[6,\"h1\"],[7],[0,\"More to come...\"],[8],[0,\"\\n    \"],[6,\"img\"],[9,\"src\",\"wip.svg\"],[9,\"height\",\"100px\"],[7],[8],[0,\"\\n\"],[8],[0,\"\\n\"],[11,1]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/wip-section/template.hbs" } });
+});
 define('personal-portfolio/pods/index/route', ['exports'], function (exports) {
     'use strict';
 
@@ -3572,7 +3597,7 @@ define("personal-portfolio/pods/index/template", ["exports"], function (exports)
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "wd2uAlVF", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"index\"],[7],[0,\"\\n    \"],[1,[25,\"portfolio-header\",null,[[\"config\"],[[20,[\"model\",\"header\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"about-me\",null,[[\"config\"],[[20,[\"model\",\"about\"]]]]],false],[0,\"    \\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-education\",null,[[\"config\"],[[20,[\"model\",\"education\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-experience\",null,[[\"config\"],[[20,[\"model\",\"experiences\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-recommendations\",null,[[\"config\"],[[20,[\"model\",\"recommendations\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-projects\",null,[[\"config\"],[[20,[\"model\",\"projects\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/index/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "/cS2i0s+", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"index\"],[7],[0,\"\\n    \"],[1,[25,\"portfolio-header\",null,[[\"config\"],[[20,[\"model\",\"header\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"about-me\",null,[[\"config\"],[[20,[\"model\",\"about\"]]]]],false],[0,\"    \\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-education\",null,[[\"config\"],[[20,[\"model\",\"education\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-experience\",null,[[\"config\"],[[20,[\"model\",\"experiences\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-recommendations\",null,[[\"config\"],[[20,[\"model\",\"recommendations\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-projects\",null,[[\"config\"],[[20,[\"model\",\"projects\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[18,\"wip-section\"],false],[0,\"\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/index/template.hbs" } });
 });
 define('personal-portfolio/pods/move-to/service', ['exports'], function (exports) {
   'use strict';
@@ -3581,13 +3606,8 @@ define('personal-portfolio/pods/move-to/service', ['exports'], function (exports
     value: true
   });
   var _window = window,
-      requestIdleCallback = _window.requestIdleCallback,
-      MoveTo = _window.MoveTo;
+      requestIdleCallback = _window.requestIdleCallback;
   exports.default = Ember.Service.extend({
-    moveTo: new MoveTo({
-      duration: 600,
-      easing: 'easeOutQuart'
-    }),
     move: function move(target) {
       var _this = this;
 
@@ -4239,6 +4259,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+26651ff0"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+0f94b4e9"});
 }
 //# sourceMappingURL=personal-portfolio.map

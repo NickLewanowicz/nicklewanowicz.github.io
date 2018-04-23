@@ -65,6 +65,11 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
     assert.ok(true, 'pods/components/portfolio-menu/component.js should pass ESLint\n\n');
   });
 
+  QUnit.test('pods/components/wip-section/component.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/components/wip-section/component.js should pass ESLint\n\n');
+  });
+
   QUnit.test('pods/index/route.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'pods/index/route.js should pass ESLint\n\n');
@@ -72,7 +77,7 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
 
   QUnit.test('pods/move-to/service.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'pods/move-to/service.js should pass ESLint\n\n7:3 - Only string, number, symbol, boolean, null, undefined, and function are allowed as default properties (ember/avoid-leaking-state-in-ember-objects)');
+    assert.ok(true, 'pods/move-to/service.js should pass ESLint\n\n');
   });
 
   QUnit.test('resolver.js', function (assert) {
@@ -228,295 +233,231 @@ define('personal-portfolio/tests/helpers/start-app', ['exports', 'personal-portf
     });
   }
 });
-define('personal-portfolio/tests/integration/pods/components/about-me/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('about-me', 'Integration | Component | about me', {
-    integration: true
-  });
+// moduleForComponent('about-me', 'Integration | Component | about me', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "A0+hFPgC",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"about-me\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{about-me}}`);
 
-    assert.equal(this.$().text().trim(), '');
-
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "A039H/5F",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"about-me\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
-
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'About Me');
+// });
+define("personal-portfolio/tests/integration/pods/components/about-me/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/experience-element/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('experience-element', 'Integration | Component | experience element', {
-    integration: true
-  });
+// moduleForComponent('experience-element', 'Integration | Component | experience element', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "qDAeBnDn",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"experience-element\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{experience-element}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "BdjhqVsF",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"experience-element\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#experience-element}}
+//       template block text
+//     {{/experience-element}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/experience-element/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/grid-card/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('grid-card', 'Integration | Component | grid card', {
-    integration: true
-  });
+// moduleForComponent('grid-card', 'Integration | Component | grid card', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "6wrcGDGj",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"grid-card\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{grid-card}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "220sirGz",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"grid-card\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
-
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+// });
+define("personal-portfolio/tests/integration/pods/components/grid-card/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/header-block/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('header-block', 'Integration | Component | header block', {
-    integration: true
-  });
+// moduleForComponent('my-education', 'Integration | Component | my education', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "vnkyJ6Ql",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"header-block\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{my-education}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "ffO/6/Dv",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"header-block\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#my-education}}
+//       template block text
+//     {{/my-education}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/my-education/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/my-education/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('my-education', 'Integration | Component | my education', {
-    integration: true
-  });
+// moduleForComponent('my-experience', 'Integration | Component | my experience', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "oh8iK2Vl",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-education\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{my-experience}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "f7u1JgY6",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-education\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#my-experience}}
+//       template block text
+//     {{/my-experience}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/my-experience/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/my-experience/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('my-experience', 'Integration | Component | my experience', {
-    integration: true
-  });
+// moduleForComponent('my-projects', 'Integration | Component | my projects', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "VESMOulq",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-experience\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{my-projects}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "TpLqobDS",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-experience\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#my-projects}}
+//       template block text
+//     {{/my-projects}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/my-projects/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/my-projects/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('my-projects', 'Integration | Component | my projects', {
-    integration: true
-  });
+// moduleForComponent('my-recommendations', 'Integration | Component | my recommendations', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "aBNzkQ/Q",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-projects\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{my-recommendations}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "Ay6iTOSd",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-projects\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#my-recommendations}}
+//       template block text
+//     {{/my-recommendations}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/my-recommendations/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/my-recommendations/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('my-recommendations', 'Integration | Component | my recommendations', {
-    integration: true
-  });
+// moduleForComponent('portfolio-header', 'Integration | Component | portfolio header', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "SpLkPrEN",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-recommendations\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{portfolio-header}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "MoL6QKtU",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-recommendations\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#portfolio-header}}
+//       template block text
+//     {{/portfolio-header}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/portfolio-header/component-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/integration/pods/components/portfolio-header/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleForComponent, test } from 'ember-qunit';
+// import hbs from 'htmlbars-inline-precompile';
 
-  (0, _emberQunit.moduleForComponent)('portfolio-header', 'Integration | Component | portfolio header', {
-    integration: true
-  });
+// moduleForComponent('portfolio-menu', 'Integration | Component | portfolio menu', {
+//   integration: true
+// });
 
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
+// test('it renders', function(assert) {
+//   // Set any properties with this.set('myProperty', 'value');
+//   // Handle any actions with this.on('myAction', function(val) { ... });
 
-    this.render(Ember.HTMLBars.template({
-      "id": "otHCKfCG",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"portfolio-header\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   this.render(hbs`{{portfolio-menu}}`);
 
-    assert.equal(this.$().text().trim(), '');
+//   assert.equal(this.$().text().trim(), '');
 
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "WdoVtev9",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"portfolio-header\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
+//   // Template block usage:
+//   this.render(hbs`
+//     {{#portfolio-menu}}
+//       template block text
+//     {{/portfolio-menu}}
+//   `);
 
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
-});
-define('personal-portfolio/tests/integration/pods/components/portfolio-menu/component-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
-
-  (0, _emberQunit.moduleForComponent)('portfolio-menu', 'Integration | Component | portfolio menu', {
-    integration: true
-  });
-
-  (0, _emberQunit.test)('it renders', function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.on('myAction', function(val) { ... });
-
-    this.render(Ember.HTMLBars.template({
-      "id": "s4CPBFTH",
-      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"portfolio-menu\"],false]],\"hasEval\":false}",
-      "meta": {}
-    }));
-
-    assert.equal(this.$().text().trim(), '');
-
-    // Template block usage:
-    this.render(Ember.HTMLBars.template({
-      "id": "oeGZ3nGn",
-      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"portfolio-menu\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
-      "meta": {}
-    }));
-
-    assert.equal(this.$().text().trim(), 'template block text');
-  });
+//   assert.equal(this.$().text().trim(), 'template block text');
+// });
+define("personal-portfolio/tests/integration/pods/components/portfolio-menu/component-test", [], function () {
+  "use strict";
 });
 define('personal-portfolio/tests/test-helper', ['personal-portfolio/app', 'personal-portfolio/config/environment', '@ember/test-helpers', 'ember-qunit'], function (_app, _environment, _testHelpers, _emberQunit) {
   'use strict';
@@ -560,11 +501,6 @@ define('personal-portfolio/tests/tests.lint-test', [], function () {
     assert.ok(true, 'integration/pods/components/grid-card/component-test.js should pass ESLint\n\n');
   });
 
-  QUnit.test('integration/pods/components/header-block/component-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'integration/pods/components/header-block/component-test.js should pass ESLint\n\n');
-  });
-
   QUnit.test('integration/pods/components/my-education/component-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/pods/components/my-education/component-test.js should pass ESLint\n\n');
@@ -605,73 +541,38 @@ define('personal-portfolio/tests/tests.lint-test', [], function () {
     assert.ok(true, 'unit/pods/application/route-test.js should pass ESLint\n\n');
   });
 
-  QUnit.test('unit/pods/idex/route-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'unit/pods/idex/route-test.js should pass ESLint\n\n');
-  });
-
   QUnit.test('unit/pods/index/route-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/pods/index/route-test.js should pass ESLint\n\n');
   });
-
-  QUnit.test('unit/pods/move-to/service-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'unit/pods/move-to/service-test.js should pass ESLint\n\n');
-  });
 });
-define('personal-portfolio/tests/unit/pods/application/route-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleFor, test } from 'ember-qunit';
 
-  (0, _emberQunit.moduleFor)('route:application', 'Unit | Route | application', {
-    // Specify the other units that are required for this test.
-    // needs: ['controller:foo']
-  });
+// moduleFor('route:application', 'Unit | Route | application', {
+//   // Specify the other units that are required for this test.
+//   // needs: ['controller:foo']
+// });
 
-  (0, _emberQunit.test)('it exists', function (assert) {
-    var route = this.subject();
-    assert.ok(route);
-  });
+// test('it exists', function(assert) {
+//   let route = this.subject();
+//   return assert.ok(route);
+// });
+define("personal-portfolio/tests/unit/pods/application/route-test", [], function () {
+  "use strict";
 });
-define('personal-portfolio/tests/unit/pods/idex/route-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
+// import { moduleFor, test } from 'ember-qunit';
 
-  (0, _emberQunit.moduleFor)('route:idex', 'Unit | Route | idex', {
-    // Specify the other units that are required for this test.
-    // needs: ['controller:foo']
-  });
+// moduleFor('route:index', 'Unit | Route | index', {
+//   // Specify the other units that are required for this test.
+//   // needs: ['controller:foo']
+// });
 
-  (0, _emberQunit.test)('it exists', function (assert) {
-    var route = this.subject();
-    assert.ok(route);
-  });
-});
-define('personal-portfolio/tests/unit/pods/index/route-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
-
-  (0, _emberQunit.moduleFor)('route:index', 'Unit | Route | index', {
-    // Specify the other units that are required for this test.
-    // needs: ['controller:foo']
-  });
-
-  (0, _emberQunit.test)('it exists', function (assert) {
-    var route = this.subject();
-    assert.ok(route);
-  });
-});
-define('personal-portfolio/tests/unit/pods/move-to/service-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
-
-  (0, _emberQunit.moduleFor)('service:move-to', 'Unit | Service | move to', {
-    // Specify the other units that are required for this test.
-    // needs: ['service:foo']
-  });
-
-  // Replace this with your real tests.
-  (0, _emberQunit.test)('it exists', function (assert) {
-    var service = this.subject();
-    assert.ok(service);
-  });
+// test('it exists', function(assert) {
+//   let route = this.subject();
+//   assert.ok(route);
+// });
+define("personal-portfolio/tests/unit/pods/index/route-test", [], function () {
+  "use strict";
 });
 require('personal-portfolio/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
