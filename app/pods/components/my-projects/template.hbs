@@ -1,35 +1,24 @@
-<div id="projects">
-    
-{{#paper-content class="md-whiteframe-z1 grid-list-demo-responsiveTiles" }}
-    {{#paper-grid-list
-    class="project-grid"
-    cols="24"
-    rowHeight="fit"
-    gutter="0px" as |grid|}}
-    {{#each config as |project i|}}
+<div id="projects" class="project-grid layout-gt-md-row layout-column">
+     {{#each config as |project i|}}
         {{#if (lt i 4)}}
-        {{#grid.tile class=(concat "project-tile dynamic color" (mod i 7)) colspan=12 rowspan=1}}
-            <div class="project-content layout-column layout-align-start">
-            <div class="header layout-row">
-                <img src={{project.icon}}>
-                <h1>{{project.name}}</h1>
+            <div class={{concat "project-content layout-column layout-align-start project-tile dynamic color" (mod i 7)}}>
+                <div>
+                    <div class="header layout-row">
+                        <img src={{project.icon}} height="50">
+                        <h1>{{project.name}}</h1>
+                    </div>
+                    <p><b>{{project.tldr}}</b></p>
+                </div>
+                <div class="options">
+                    {{#if project.demo}}
+                    {{#paper-button  href=project.demo raised=true primary=true}}Demo{{/paper-button}}
+                    {{/if}}
+                    {{#paper-button  href=project.url disabled=(not project.url) primary=true}}Github{{/paper-button}}
+                </div>
             </div>
-            <div class="tldr flex">
-                <p>
-                    <b>{{project.tldr}}</b>
-                </p>
-                {{#if project.demo}}
-                {{#paper-button  href=project.demo raised=true primary=true}}Demo{{/paper-button}}
-                {{/if}}
-                {{#paper-button  href=project.url disabled=(not project.url) primary=true}}Github{{/paper-button}}
-            </div>
-            </div>
-        {{/grid.tile}}
         {{/if}}
     {{/each}}
-    {{/paper-grid-list}}
-{{/paper-content}}
-{{!-- <div class="scroll-indicator fa fa-chevron-down">{{paper-icon "keyboard-arrow-right" size=72}}</div> --}}
+
 </div>
 
 {{yield}}

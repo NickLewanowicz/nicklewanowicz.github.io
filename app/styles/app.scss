@@ -321,13 +321,6 @@ md-tabs {
 
 #projects {
     background: $color3;
-    
-    a:hover {
-        .project-tile {
-            //box-shadow: 10px 10px 100px 0px #888888;
-        }
-        
-    }
     .color0 {
         background-color: $material-color-light-blue-050;
     }
@@ -349,12 +342,24 @@ md-tabs {
     .color6 {
         background-color: $material-color-light-blue-200;
     }
+    .project-grid {
+        max-height: 100VH;
+        width: 100VW;
+    }
     .project-tile {
-        .project-content {
-            margin-left: 2rem;
-            width: 100%
-            //padding: 2rem;
+        width: 100%;
+        justify-content: space-between;
+        .header {
+            margin: 1rem;
+            justify-content: start;
         }
+        .tldr {
+            max-height: 50%;
+        }
+        .options {
+            margin: 0.5rem;
+        }
+        
         h1 {
             margin-top: 1rem;
             font-size: 1rem;
@@ -375,19 +380,7 @@ md-tabs {
         // border-width: 0.2rem;
         
     }
-    .project-grid {
-        //margin: 2rem;
-    }
-    // .collapsed{
-    //     md-grid-list {
-    //         width: 100VW;
-    //         height: 50VH;
-    //     }
-    // }
-    md-grid-list {
-        width: 100VW;
-        height: 50VH;
-    }
+    
     .scroll-indicator {	
         z-index: 2;
         position: absolute;
