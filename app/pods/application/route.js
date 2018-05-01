@@ -221,6 +221,15 @@ export default Route.extend({
             ],
             "projects": [
                 {
+                    "name": "Diabuddy Web/iOS App",
+                    "url": "https://github.com/daibuddy",
+                    "tldr": "Award Winning Hacking Health 2018 serverless health monitor for children",
+                    "description": "Built using: Emberjs, firebase, and swift",
+                    "icon": "/assets/Trendify.png",
+                    "row": 10,
+                    "col": 8
+                },
+                {
                     "name": "Trendify Web App",
                     "url": "https://github.com/NickLewanowicz/trendify-web",
                     "tldr": "Award Winning CUHacking 2018 web socket based game",
