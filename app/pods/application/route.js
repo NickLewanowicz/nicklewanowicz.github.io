@@ -223,9 +223,10 @@ export default Route.extend({
                 {
                     "name": "Diabuddy Web/iOS App",
                     "url": "https://github.com/daibuddy",
+                    "demo": "http://diabuddy.live",
                     "tldr": "Award Winning Hacking Health 2018 serverless health monitor for children",
                     "description": "Built using: Emberjs, firebase, and swift",
-                    "icon": "/assets/Trendify.png",
+                    "icon": "/assets/diabuddy.png",
                     "row": 10,
                     "col": 8
                 },
