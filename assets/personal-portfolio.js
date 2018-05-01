@@ -3246,6 +3246,15 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "avatar_url": "images/22964937.png"
                 }],
                 "projects": [{
+                    "name": "Diabuddy Web/iOS App",
+                    "url": "https://github.com/daibuddy",
+                    "demo": "http://diabuddy.live",
+                    "tldr": "Award Winning Hacking Health 2018 serverless health monitor for children",
+                    "description": "Built using: Emberjs, firebase, and swift",
+                    "icon": "/assets/diabuddy.png",
+                    "row": 10,
+                    "col": 8
+                }, {
                     "name": "Trendify Web App",
                     "url": "https://github.com/NickLewanowicz/trendify-web",
                     "tldr": "Award Winning CUHacking 2018 web socket based game",
@@ -3517,7 +3526,7 @@ define("personal-portfolio/pods/components/my-projects/template", ["exports"], f
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "zX2naRCJ", "block": "{\"symbols\":[\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[9,\"class\",\"project-grid layout-gt-md-row layout-column\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"if\",[[25,\"lt\",[[19,2,[]],4],null]],null,{\"statements\":[[0,\"            \"],[6,\"div\"],[10,\"class\",[25,\"concat\",[\"project-content layout-column layout-align-start project-tile dynamic color\",[25,\"mod\",[[19,2,[]],7],null]],null],null],[7],[0,\"\\n                \"],[6,\"div\"],[7],[0,\"\\n                    \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                        \"],[6,\"img\"],[10,\"src\",[19,1,[\"icon\"]],null],[9,\"height\",\"50\"],[7],[8],[0,\"\\n                        \"],[6,\"h1\"],[7],[1,[19,1,[\"name\"]],false],[8],[0,\"\\n                    \"],[8],[0,\"\\n                    \"],[6,\"p\"],[7],[6,\"b\"],[7],[1,[19,1,[\"tldr\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"options\"],[7],[0,\"\\n\"],[4,\"if\",[[19,1,[\"demo\"]]],null,{\"statements\":[[0,\"                    \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,1,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,1,[\"url\"]],[25,\"not\",[[19,1,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[1,2]},null],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,3]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "6pS1Crgg", "block": "{\"symbols\":[\"project\",\"i\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"projects\"],[7],[0,\"\\n    \"],[6,\"div\"],[9,\"class\",\"project-grid layout-gt-md-row layout-column\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"if\",[[25,\"lt\",[[19,2,[]],4],null]],null,{\"statements\":[[0,\"            \"],[6,\"div\"],[10,\"class\",[25,\"concat\",[\"project-content layout-column layout-align-start project-tile dynamic color\",[25,\"mod\",[[19,2,[]],7],null]],null],null],[7],[0,\"\\n                \"],[6,\"div\"],[7],[0,\"\\n                    \"],[6,\"div\"],[9,\"class\",\"header layout-row\"],[7],[0,\"\\n                        \"],[6,\"img\"],[10,\"src\",[19,1,[\"icon\"]],null],[9,\"height\",\"50\"],[7],[8],[0,\"\\n                        \"],[6,\"h1\"],[7],[1,[19,1,[\"name\"]],false],[8],[0,\"\\n                    \"],[8],[0,\"\\n                    \"],[6,\"p\"],[7],[6,\"b\"],[7],[1,[19,1,[\"tldr\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"options\"],[7],[0,\"\\n\"],[4,\"if\",[[19,1,[\"demo\"]]],null,{\"statements\":[[0,\"                    \"],[4,\"paper-button\",null,[[\"href\",\"raised\",\"primary\"],[[19,1,[\"demo\"]],true,true]],{\"statements\":[[0,\"Demo\"]],\"parameters\":[]},null],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"                    \"],[4,\"paper-button\",null,[[\"href\",\"disabled\",\"primary\"],[[19,1,[\"url\"]],[25,\"not\",[[19,1,[\"url\"]]],null],true]],{\"statements\":[[0,\"Github\"]],\"parameters\":[]},null],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n\"]],\"parameters\":[]},null]],\"parameters\":[1,2]},null],[0,\"    \"],[8],[0,\"\\n    \"],[6,\"a\"],[9,\"href\",\"http://www.github.com/nicklewanowicz\"],[9,\"target\",\"_blank\"],[7],[0,\" \\n    \"],[6,\"div\"],[9,\"class\",\"project-content layout-column layout-align-center-center project-tile dynamic color6\"],[7],[0,\"\\n        \"],[6,\"div\"],[9,\"class\",\"header\"],[7],[0,\"\\n            \"],[6,\"h1\"],[7],[0,\"See more of my projects on Github\"],[8],[0,\"\\n        \"],[8],[0,\"\\n    \"],[8],[0,\"\\n    \"],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\\n\"],[11,3]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-projects/template.hbs" } });
 });
 define('personal-portfolio/pods/components/my-recommendations/component', ['exports'], function (exports) {
   'use strict';
@@ -4259,6 +4268,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+debcc27c"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+f1f9f656"});
 }
 //# sourceMappingURL=personal-portfolio.map
