@@ -3247,7 +3247,7 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                 }],
                 "projects": [{
                     "name": "Diabuddy Web/iOS App",
-                    "url": "https://github.com/daibuddy",
+                    "url": "https://github.com/diabuddy",
                     "demo": "http://diabuddy.live",
                     "tldr": "Award Winning Hacking Health 2018 serverless health monitor for children",
                     "description": "Built using: Emberjs, firebase, and swift",
@@ -4268,6 +4268,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+f1f9f656"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+9511f5ca"});
 }
 //# sourceMappingURL=personal-portfolio.map
