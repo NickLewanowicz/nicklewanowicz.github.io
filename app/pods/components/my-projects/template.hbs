@@ -1,4 +1,5 @@
-<div id="projects" class="project-grid layout-gt-md-row layout-column">
+<div id="projects">
+    <div class="project-grid layout-gt-md-row layout-column">
      {{#each config as |project i|}}
         {{#if (lt i 4)}}
             <div class={{concat "project-content layout-column layout-align-start project-tile dynamic color" (mod i 7)}}>
@@ -18,7 +19,15 @@
             </div>
         {{/if}}
     {{/each}}
-
+    </div>
+    <a href="http://www.github.com/nicklewanowicz" target="_blank"> 
+    <div class="project-content layout-column layout-align-center-center project-tile dynamic color6">
+        <div class="header">
+            <h1>See more of my projects on Github</h1>
+        </div>
+    </div>
+    </a>
 </div>
+
 
 {{yield}}
