@@ -1,3 +1,16 @@
+{{#paper-content class="md-whiteframe-z1 grid-list-demo-dynamicTiles"}}
+  {{#paper-grid-list
+    cols="sm-4 md-6 gt-md-12"
+    rowHeight="1:1"
+    gutter="2px gt-sm-2px" as |grid i|}}
 
+    {{#each config as |skills|}}
+      {{#grid.tile rowspan=skills.size.[0] colspan=skills.size.[1] class=dynamicTile.background as |tile|}}
+        <h3>{{skills.name}}</h3>
+      {{/grid.tile}}
+    {{/each}}
+
+  {{/paper-grid-list}}
+{{/paper-content}}
 
 {{yield}}
