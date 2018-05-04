@@ -122,32 +122,32 @@ export default Route.extend({
                 {
                     "name": "EmberJS",
                     "image": "",
-                    "size": [2,2]
+                    "size": [1,1]
                 },
                 {
                     "name": "Javascript ES6",
                     "image": "",
-                    "size": [2,2]
+                    "size": [1,1]
                 },
                 {
                     "name": "Node.JS",
                     "image": "",
-                    "size": [2,2]
+                    "size": [1,1]
                 },
                 {
                     "name": "React-Native",
                     "image": "",
-                    "size": [2,2]
+                    "size": [1,1]
                 },
                 {
                     "name": "Golang",
                     "image": "",
-                    "size": [2,2]
+                    "size": [1,1]
                 },
                 {
                     "name": "HTML5/CSS",
                     "image": "",
-                    "size": [2,2]
+                    "size": [1,1]
                 },
                 {
                     "name": "Docker",
