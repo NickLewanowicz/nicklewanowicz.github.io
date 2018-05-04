@@ -120,42 +120,82 @@ export default Route.extend({
             ],
             "skills": [
                 {
-                    "name": "Web Development",
-                    "level": "advanced",
-                    "keywords": [
-                    "HTML5",
-                    "CSS3",
-                    "Javascript",
-                    "Ember.js",
-                    "React",
-                    "Vue.js",
-                    "Meteor",
-                    "Aurelia"
-                    ]
+                    "name": "EmberJS",
+                    "image": "",
+                    "size": [2,2]
                 },
                 {
-                    "name": "Software Design",
-                    "level": "intermediate",
-                    "keywords": [
-                    "Java",
-                    "C Language",
-                    "C++",
-                    "Python",
-                    "Golang",
-                    "Android",
-                    "Node.js"
-                    ]
+                    "name": "Javascript ES6",
+                    "image": "",
+                    "size": [2,2]
                 },
                 {
-                    "name": "Automation, Building, and Testing",
-                    "level": "advanced",
-                    "keywords": [
-                    "Mocha",
-                    "Chai",
-                    "qUnit",
-                    "EmberJs"
-                    ]
+                    "name": "Node.JS",
+                    "image": "",
+                    "size": [2,2]
+                },
+                {
+                    "name": "React-Native",
+                    "image": "",
+                    "size": [2,2]
+                },
+                {
+                    "name": "Golang",
+                    "image": "",
+                    "size": [2,2]
+                },
+                {
+                    "name": "HTML5/CSS",
+                    "image": "",
+                    "size": [2,2]
+                },
+                {
+                    "name": "Docker",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "React",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "Rails",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "MongoDB",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "SQL",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "Python",
+                    "image": "",
+                    "size": [1,1]
+                },
+                
+                {
+                    "name": "Java",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "C",
+                    "image": "",
+                    "size": [1,1]
+                },
+                {
+                    "name": "C++",
+                    "image": "",
+                    "size": [1,1]
                 }
+                
             ],
             "contact": {
                 "email": "c2VlbmFyb3doYW5pOTVAZ21haWwuY29t"
@@ -372,3 +412,41 @@ export default Route.extend({
         } 
     }
 });
+
+
+// {
+//     "name": "Web Development",
+//     "level": "advanced",
+//     "keywords": [
+//     "HTML5",
+//     "CSS3",
+//     "Javascript",
+//     "Ember.js",
+//     "React",
+//     "Vue.js",
+//     "Meteor",
+//     "Aurelia"
+//     ]
+// },
+// {
+//     "name": "Software Design",
+//     "level": "intermediate",
+//     "keywords": [
+//     "Java",
+//     "C Language",
+//     "C++",
+//     "Python",
+//     "Golang",
+//     "Node.js"
+//     ]
+// },
+// {
+//     "name": "Automation, Building, and Testing",
+//     "level": "advanced",
+//     "keywords": [
+//     "Mocha",
+//     "TravisCI",
+//     "CircleCI",
+//     "qUnit"
+//     ]
+// }
