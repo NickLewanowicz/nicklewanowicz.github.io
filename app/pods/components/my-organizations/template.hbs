@@ -1,1 +1,17 @@
+<div id="organizations">
+<h3>Places Ive Contributed Code!</h3>
+<div class="container layout-column layout-gt-md-row layout-align-center-center">
+{{#each config as |org|}}
+    <a href="#0">
+    <div class="con"> 
+      <div class="profile-photo"><img alt={{org.name}} src={{org.image}}></div>
+        <div class="layout-column layout-align-center-start flex-80">
+            <span class="title layout-row layout-center">{{org.name}}</span>
+        </div>
+    </div></a>
+  <div class="bk"></div>
+{{/each}}
+</div>
 {{yield}}
+
+</div>
