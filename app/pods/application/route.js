@@ -234,29 +234,41 @@ export default Route.extend({
             },
             "organizations": [
                 {
-                    "login": "Ciena-Blueplanet",
+                    "name": "Accedian",
+                    "id": 22104835,
+                    "url": "https://github.com/Accedian",
+                    "image": "assets/accedian.png"
+                },
+                {
+                    "name": "Diabuddy",
+                    "id": 22104835,
+                    "url": "https://github.com/diabuddy",
+                    "image": "assets/diabuddy.png"
+                },
+                {
+                    "name": "Trendify",
+                    "id": 22104835,
+                    "url": "https://github.com/trendify",
+                    "image": "assets/trendify.png"
+                },
+                {
+                    "name": "Ciena Blueplanet",
                     "id": 4604820,
                     "url": "https://github.com/ciena-blueplanet",
-                    "avatar_url": "images/4604820.png",
+                    "image": "assets/cienablueplanet.png",
                     "description": "A division of Ciena"
                 },
                 {
-                    "login": "Ciena-Frost",
+                    "name": "Ciena Frost",
                     "id": 16601148,
                     "url": "https://github.com/ciena-frost",
-                    "avatar_url": "images/16601148.png"
+                    "image": "assets/cienafrost.png"
                 },
                 {
-                    "login": "Accedian",
-                    "id": 22104835,
-                    "url": "https://github.com/Accedian",
-                    "avatar_url": "images/22104835.png"
-                },
-                {
-                    "login": "MyCryptoHQ",
+                    "name": "MyCryptoHQ",
                     "id": 22964937,
                     "url": "https://github.com/MyCryptoHQ",
-                    "avatar_url": "images/22964937.png"
+                    "image": "assets/mycrypto.png"
                 }
             ],
             "projects": [
