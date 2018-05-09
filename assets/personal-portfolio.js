@@ -3184,17 +3184,65 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     "link": "https://www.linkedin.com/in/david-cote-798b8689/"
                 }],
                 "skills": [{
-                    "name": "Web Development",
-                    "level": "advanced",
-                    "keywords": ["HTML5", "CSS3", "Javascript", "Ember.js", "React", "Vue.js", "Meteor", "Aurelia"]
+                    "name": "EmberJS",
+                    "image": "",
+                    "size": [1, 1]
                 }, {
-                    "name": "Software Design",
-                    "level": "intermediate",
-                    "keywords": ["Java", "C Language", "C++", "Python", "Golang", "Android", "Node.js"]
+                    "name": "Javascript ES6",
+                    "image": "",
+                    "size": [1, 1]
                 }, {
-                    "name": "Automation, Building, and Testing",
-                    "level": "advanced",
-                    "keywords": ["Mocha", "Chai", "qUnit", "EmberJs"]
+                    "name": "Node.JS",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "React-Native",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "Golang",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "HTML5/CSS",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "Docker",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "React",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "Rails",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "MongoDB",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "SQL",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "Python",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "Java",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "C",
+                    "image": "",
+                    "size": [1, 1]
+                }, {
+                    "name": "C++",
+                    "image": "",
+                    "size": [1, 1]
                 }],
                 "contact": {
                     "email": "c2VlbmFyb3doYW5pOTVAZ21haWwuY29t"
@@ -3224,26 +3272,36 @@ define("personal-portfolio/pods/application/route", ["exports"], function (expor
                     }]
                 },
                 "organizations": [{
-                    "login": "Ciena-Blueplanet",
-                    "id": 4604820,
-                    "url": "https://github.com/ciena-blueplanet",
-                    "avatar_url": "images/4604820.png",
-                    "description": "A division of Ciena"
-                }, {
-                    "login": "Ciena-Frost",
-                    "id": 16601148,
-                    "url": "https://github.com/ciena-frost",
-                    "avatar_url": "images/16601148.png"
-                }, {
-                    "login": "Accedian",
+                    "name": "Accedian",
                     "id": 22104835,
                     "url": "https://github.com/Accedian",
-                    "avatar_url": "images/22104835.png"
+                    "image": "assets/accedian.png"
                 }, {
-                    "login": "MyCryptoHQ",
+                    "name": "Diabuddy",
+                    "id": 22104835,
+                    "url": "https://github.com/diabuddy",
+                    "image": "assets/diabuddy.png"
+                }, {
+                    "name": "Trendify",
+                    "id": 22104835,
+                    "url": "https://github.com/trendify",
+                    "image": "assets/trendify.png"
+                }, {
+                    "name": "Ciena Blueplanet",
+                    "id": 4604820,
+                    "url": "https://github.com/ciena-blueplanet",
+                    "image": "assets/cienablueplanet.png",
+                    "description": "A division of Ciena"
+                }, {
+                    "name": "Ciena Frost",
+                    "id": 16601148,
+                    "url": "https://github.com/ciena-frost",
+                    "image": "assets/cienafrost.png"
+                }, {
+                    "name": "MyCryptoHQ",
                     "id": 22964937,
                     "url": "https://github.com/MyCryptoHQ",
-                    "avatar_url": "images/22964937.png"
+                    "image": "assets/mycrypto.png"
                 }],
                 "projects": [{
                     "name": "Diabuddy Web/iOS App",
@@ -3504,6 +3562,22 @@ define("personal-portfolio/pods/components/my-experience/template", ["exports"],
   });
   exports.default = Ember.HTMLBars.template({ "id": "3waZhhX4", "block": "{\"symbols\":[\"timeline\",\"experience\",\"index\",\"block\",\"content\",\"highlight\",\"&default\"],\"statements\":[[0,\"\\n    \\n\"],[6,\"div\"],[9,\"id\",\"experience\"],[7],[0,\"\\n\"],[4,\"vertical-timeline\",null,null,{\"statements\":[[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"block\"]]],null,{\"statements\":[[4,\"component\",[[19,4,[\"image\"]]],[[\"class\"],[[25,\"concat\",[[25,\"if\",[[25,\"eq\",[[25,\"mod\",[[19,3,[]],2],null],1],null],\"primary\",\"secondary\"],null],\"-timeline-pill\"],null]]],{\"statements\":[[0,\"                \"],[1,[25,\"paper-icon\",[\"location-on\"],[[\"size\",\"class\"],[36,\"experience-icon\"]]],false],[0,\"\\n\"]],\"parameters\":[]},null],[4,\"component\",[[19,4,[\"content\"]]],[[\"class\"],[[25,\"concat\",[\"dynamic card-color-\",[25,\"mod\",[[19,3,[]],3],null]],null]]],{\"statements\":[[0,\"                \"],[6,\"div\"],[10,\"class\",[25,\"concat\",[[25,\"if\",[[25,\"eq\",[[25,\"mod\",[[19,3,[]],2],null],1],null],\"primary\",\"secondary\"],null],\"-experience-card highlights layout-column card-color-\"],null],null],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"layout-row\"],[7],[0,\"\\n                    \"],[6,\"h2\"],[7],[1,[19,2,[\"company\"]],false],[8],[0,\" \\n                    \"],[6,\"h4\"],[7],[0,\"\\n\"],[4,\"if\",[[25,\"eq\",[[19,2,[\"endDate\"]],\"Present\"],null]],null,{\"statements\":[[0,\"                            \"],[1,[25,\"add\",[[25,\"moment-diff\",[[19,2,[\"startDate\"]],[20,[\"now\"]]],[[\"precision\"],[\"months\"]]],1],null],false],[0,\" Months\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"                            \"],[1,[25,\"add\",[[25,\"moment-diff\",[[19,2,[\"startDate\"]],[19,2,[\"endDate\"]]],[[\"precision\"],[\"months\"]]],1],null],false],[0,\" Months\\n\"]],\"parameters\":[]}],[0,\"                    \"],[8],[0,\"\\n                    \"],[8],[0,\"\\n                    \"],[6,\"p\"],[7],[1,[19,2,[\"position\"]],false],[8],[0,\"\\n                    \\n\"],[4,\"each\",[[19,2,[\"highlights\"]]],null,{\"statements\":[[0,\"                            \"],[6,\"div\"],[9,\"class\",\"layout-row\"],[7],[1,[25,\"paper-icon\",[\"keyboard-arrow-right\"],[[\"size\",\"class\"],[30,\"icon flex-5\"]]],false],[6,\"li\"],[9,\"class\",\"highlights\"],[7],[1,[19,6,[]],false],[8],[8],[0,\"\\n\"]],\"parameters\":[6]},null],[4,\"component\",[[19,5,[\"date\"]]],null,{\"statements\":[[0,\"                        \"],[1,[25,\"moment-format\",[[19,2,[\"startDate\"]],\"MMM YYYY\"],null],false],[0,\" to \\n\"],[4,\"if\",[[25,\"eq\",[[19,2,[\"endDate\"]],\"Present\"],null]],null,{\"statements\":[[0,\"                            Present\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"                            \"],[1,[25,\"moment-format\",[[19,2,[\"endDate\"]],\"MMM YYYY\"],null],false],[0,\"\\n\"]],\"parameters\":[]}]],\"parameters\":[]},null],[0,\"                \"],[8],[0,\"\\n\"]],\"parameters\":[5]},null]],\"parameters\":[4]},null]],\"parameters\":[2,3]},null],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\"],[11,7]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-experience/template.hbs" } });
 });
+define('personal-portfolio/pods/components/my-organizations/component', ['exports'], function (exports) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = Ember.Component.extend({});
+});
+define("personal-portfolio/pods/components/my-organizations/template", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "kqPhAgqM", "block": "{\"symbols\":[\"org\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"organizations\"],[7],[0,\"\\n\"],[6,\"h3\"],[7],[0,\"Places Ive Contributed Code!\"],[8],[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"container layout-column layout-gt-md-row layout-align-center-center\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"    \"],[6,\"a\"],[9,\"href\",\"#0\"],[7],[0,\"\\n    \"],[6,\"div\"],[9,\"class\",\"con\"],[7],[0,\" \\n      \"],[6,\"div\"],[9,\"class\",\"profile-photo\"],[7],[6,\"img\"],[10,\"alt\",[19,1,[\"name\"]],null],[10,\"src\",[19,1,[\"image\"]],null],[7],[8],[8],[0,\"\\n        \"],[6,\"div\"],[9,\"class\",\"layout-column layout-align-center-start flex-80\"],[7],[0,\"\\n            \"],[6,\"span\"],[9,\"class\",\"title layout-row layout-center\"],[7],[1,[19,1,[\"name\"]],false],[8],[0,\"\\n        \"],[8],[0,\"\\n    \"],[8],[8],[0,\"\\n  \"],[6,\"div\"],[9,\"class\",\"bk\"],[7],[8],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\"],[11,2],[0,\"\\n\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-organizations/template.hbs" } });
+});
 define('personal-portfolio/pods/components/my-projects/component', ['exports'], function (exports) {
     'use strict';
 
@@ -3543,6 +3617,22 @@ define("personal-portfolio/pods/components/my-recommendations/template", ["expor
     value: true
   });
   exports.default = Ember.HTMLBars.template({ "id": "3yubb1/8", "block": "{\"symbols\":[\"recommendation\",\"&default\"],\"statements\":[[6,\"div\"],[9,\"id\",\"recommendation\"],[9,\"class\",\"layout-gt-sm-row layout-sm-column layout-align-center-start\"],[7],[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[0,\"        \"],[6,\"div\"],[9,\"class\",\"recommendation-card dynamic layout-column\"],[7],[0,\"\\n            \"],[6,\"div\"],[9,\"class\",\"layout-row layout-align-start-start\"],[7],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"profile-photo\"],[7],[6,\"img\"],[10,\"alt\",[19,1,[\"person\"]],null],[10,\"src\",[19,1,[\"image\"]],null],[7],[8],[8],[0,\"\\n                \"],[6,\"div\"],[9,\"class\",\"layout-column layout-align-center-start flex-80\"],[7],[0,\"\\n                    \"],[6,\"span\"],[9,\"class\",\"title\"],[7],[1,[19,1,[\"person\"]],false],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[0,\" \"],[6,\"b\"],[7],[1,[19,1,[\"position\"]],false],[8],[8],[0,\"\\n                    \"],[6,\"span\"],[7],[6,\"i\"],[7],[1,[19,1,[\"relationship\"]],false],[8],[8],[0,\"\\n                \"],[8],[0,\"\\n            \"],[8],[0,\"\\n            \"],[6,\"p\"],[7],[1,[19,1,[\"letter\"]],false],[8],[0,\"\\n            \"],[6,\"i\"],[7],[6,\"a\"],[9,\"target\",\"_blank\"],[10,\"href\",[19,1,[\"link\"]],null],[7],[0,\"View on LinkedIn\"],[8],[8],[0,\"\\n        \"],[8],[0,\"\\n\"]],\"parameters\":[1]},null],[8],[0,\"\\n\\n\"],[11,2]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-recommendations/template.hbs" } });
+});
+define('personal-portfolio/pods/components/my-skills/component', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({});
+});
+define("personal-portfolio/pods/components/my-skills/template", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "QQoQdz/E", "block": "{\"symbols\":[\"grid\",\"i\",\"skills\",\"tile\",\"&default\"],\"statements\":[[4,\"paper-content\",null,[[\"class\"],[\"md-whiteframe-z1 grid-list-demo-dynamicTiles\"]],{\"statements\":[[4,\"paper-grid-list\",null,[[\"cols\",\"rowHeight\",\"gutter\"],[\"sm-4 md-6 gt-md-12\",\"1:1\",\"2px gt-sm-2px\"]],{\"statements\":[[0,\"\\n\"],[4,\"each\",[[20,[\"config\"]]],null,{\"statements\":[[4,\"component\",[[19,1,[\"tile\"]]],[[\"rowspan\",\"colspan\",\"class\"],[[19,3,[\"size\",\"0\"]],[19,3,[\"size\",\"1\"]],[20,[\"dynamicTile\",\"background\"]]]],{\"statements\":[[0,\"        \"],[6,\"h3\"],[7],[1,[19,3,[\"name\"]],false],[8],[0,\"\\n\"]],\"parameters\":[4]},null]],\"parameters\":[3]},null],[0,\"\\n\"]],\"parameters\":[1,2]},null]],\"parameters\":[]},null],[0,\"\\n\"],[11,5]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/components/my-skills/template.hbs" } });
 });
 define('personal-portfolio/pods/components/portfolio-header/component', ['exports'], function (exports) {
   'use strict';
@@ -3606,7 +3696,7 @@ define("personal-portfolio/pods/index/template", ["exports"], function (exports)
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "/cS2i0s+", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"index\"],[7],[0,\"\\n    \"],[1,[25,\"portfolio-header\",null,[[\"config\"],[[20,[\"model\",\"header\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"about-me\",null,[[\"config\"],[[20,[\"model\",\"about\"]]]]],false],[0,\"    \\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-education\",null,[[\"config\"],[[20,[\"model\",\"education\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-experience\",null,[[\"config\"],[[20,[\"model\",\"experiences\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-recommendations\",null,[[\"config\"],[[20,[\"model\",\"recommendations\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-projects\",null,[[\"config\"],[[20,[\"model\",\"projects\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[18,\"wip-section\"],false],[0,\"\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/index/template.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "UiywT4RJ", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[6,\"div\"],[9,\"class\",\"index\"],[7],[0,\"\\n    \"],[1,[25,\"portfolio-header\",null,[[\"config\"],[[20,[\"model\",\"header\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"about-me\",null,[[\"config\"],[[20,[\"model\",\"about\"]]]]],false],[0,\"    \\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-education\",null,[[\"config\"],[[20,[\"model\",\"education\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-experience\",null,[[\"config\"],[[20,[\"model\",\"experiences\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-recommendations\",null,[[\"config\"],[[20,[\"model\",\"recommendations\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n    \"],[1,[25,\"my-projects\",null,[[\"config\"],[[20,[\"model\",\"projects\"]]]]],false],[0,\"\\n    \"],[1,[18,\"paper-divider\"],false],[0,\"\\n\"],[0,\"    \"],[1,[18,\"wip-section\"],false],[0,\"\\n\"],[8]],\"hasEval\":false}", "meta": { "moduleName": "personal-portfolio/pods/index/template.hbs" } });
 });
 define('personal-portfolio/pods/move-to/service', ['exports'], function (exports) {
   'use strict';
@@ -4268,6 +4358,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+950283e6"});
+  require("personal-portfolio/app")["default"].create({"name":"personal-portfolio","version":"0.0.0+e63befa9"});
 }
 //# sourceMappingURL=personal-portfolio.map

@@ -45,6 +45,11 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
     assert.ok(true, 'pods/components/my-experience/component.js should pass ESLint\n\n');
   });
 
+  QUnit.test('pods/components/my-organizations/component.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/components/my-organizations/component.js should pass ESLint\n\n');
+  });
+
   QUnit.test('pods/components/my-projects/component.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'pods/components/my-projects/component.js should pass ESLint\n\n');
@@ -53,6 +58,11 @@ define('personal-portfolio/tests/app.lint-test', [], function () {
   QUnit.test('pods/components/my-recommendations/component.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'pods/components/my-recommendations/component.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('pods/components/my-skills/component.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'pods/components/my-skills/component.js should pass ESLint\n\n');
   });
 
   QUnit.test('pods/components/portfolio-header/component.js', function (assert) {
@@ -351,6 +361,35 @@ define("personal-portfolio/tests/integration/pods/components/my-education/compon
 define("personal-portfolio/tests/integration/pods/components/my-experience/component-test", [], function () {
   "use strict";
 });
+define('personal-portfolio/tests/integration/pods/components/my-organizations/component-test', ['ember-qunit'], function (_emberQunit) {
+  'use strict';
+
+  (0, _emberQunit.moduleForComponent)('my-organizations', 'Integration | Component | my organizations', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      "id": "FKTG/jQn",
+      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-organizations\"],false]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      "id": "HvBb0gDu",
+      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-organizations\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
 // import { moduleForComponent, test } from 'ember-qunit';
 // import hbs from 'htmlbars-inline-precompile';
 
@@ -404,6 +443,35 @@ define("personal-portfolio/tests/integration/pods/components/my-projects/compone
 // });
 define("personal-portfolio/tests/integration/pods/components/my-recommendations/component-test", [], function () {
   "use strict";
+});
+define('personal-portfolio/tests/integration/pods/components/my-skills/component-test', ['ember-qunit'], function (_emberQunit) {
+  'use strict';
+
+  (0, _emberQunit.moduleForComponent)('my-skills', 'Integration | Component | my skills', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      "id": "2g60K2bh",
+      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"my-skills\"],false]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      "id": "IfOQwvwK",
+      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"my-skills\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
 });
 // import { moduleForComponent, test } from 'ember-qunit';
 // import hbs from 'htmlbars-inline-precompile';
@@ -511,6 +579,11 @@ define('personal-portfolio/tests/tests.lint-test', [], function () {
     assert.ok(true, 'integration/pods/components/my-experience/component-test.js should pass ESLint\n\n');
   });
 
+  QUnit.test('integration/pods/components/my-organizations/component-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/pods/components/my-organizations/component-test.js should pass ESLint\n\n');
+  });
+
   QUnit.test('integration/pods/components/my-projects/component-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/pods/components/my-projects/component-test.js should pass ESLint\n\n');
@@ -519,6 +592,11 @@ define('personal-portfolio/tests/tests.lint-test', [], function () {
   QUnit.test('integration/pods/components/my-recommendations/component-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/pods/components/my-recommendations/component-test.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('integration/pods/components/my-skills/component-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/pods/components/my-skills/component-test.js should pass ESLint\n\n');
   });
 
   QUnit.test('integration/pods/components/portfolio-header/component-test.js', function (assert) {

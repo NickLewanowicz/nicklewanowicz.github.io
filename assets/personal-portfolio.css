@@ -20340,3 +20340,61 @@ h1, h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+#organizations .profile-photo {
+  position: relative;
+  margin: 0rem auto 3rem auto;
+  height: 9VH;
+  width: 10VH;
+  border-radius: 10VH; }
+  #organizations .profile-photo img {
+    width: 100%; }
+
+#organizations .container {
+  -webkit-perspective: 20VH;
+          perspective: 20VH; }
+  #organizations .container a {
+    text-decoration: none;
+    -webkit-transition: 0.4s cubic-bezier(0.36, 0.47, 0.3, 1);
+    transition: 0.4s cubic-bezier(0.36, 0.47, 0.3, 1);
+    -webkit-transform: translateZ(0rem);
+            transform: translateZ(0rem);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+    #organizations .container a .con {
+      background: #f7f7f7;
+      border-radius: .4em;
+      padding: 2vw;
+      margin: 1rem;
+      min-width: 200px;
+      font-size: 2rem;
+      -webkit-transition: 0.8s cubic-bezier(0.36, 0.47, 0.3, 1);
+      transition: 0.8s cubic-bezier(0.36, 0.47, 0.3, 1);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d; }
+    #organizations .container a:hover, #organizations .container a:focus {
+      -webkit-transform: translateZ(0.1rem) rotateX(5deg);
+              transform: translateZ(0.1rem) rotateX(5deg); }
+      #organizations .container a:hover .con, #organizations .container a:focus .con {
+        -webkit-transform: rotateX(-5deg) translateZ(0.1rem);
+                transform: rotateX(-5deg) translateZ(0.1rem); }
+        #organizations .container a:hover .con .experiment-title, #organizations .container a:focus .con .experiment-title {
+          -webkit-transform: translateZ(0.1rem);
+                  transform: translateZ(0.1rem); }
+          #organizations .container a:hover .con .experiment-title:before, #organizations .container a:focus .con .experiment-title:before {
+            -webkit-transform-origin: left;
+                    transform-origin: left;
+            -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1); }
+      #organizations .container a:hover ~ .bk, #organizations .container a:focus ~ .bk {
+        opacity: 1; }
+  #organizations .container .bk {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: 0.8s cubic-bezier(0.36, 0.47, 0.3, 1);
+    transition: 0.8s cubic-bezier(0.36, 0.47, 0.3, 1);
+    opacity: 0; }

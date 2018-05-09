@@ -8,12 +8,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="personal-portfolio/config/environment" content="%7B%22modulePrefix%22%3A%22personal-portfolio%22%2C%22podModulePrefix%22%3A%22personal-portfolio/pods%22%2C%22environment%22%3A%22development%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22personal-portfolio%22%2C%22version%22%3A%220.0.0+950283e6%22%7D%2C%22ember-paper%22%3A%7B%22insertFontLinks%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Atrue%7D" />
+<meta name="personal-portfolio/config/environment" content="%7B%22modulePrefix%22%3A%22personal-portfolio%22%2C%22podModulePrefix%22%3A%22personal-portfolio/pods%22%2C%22environment%22%3A%22development%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22personal-portfolio%22%2C%22version%22%3A%220.0.0+e63befa9%22%7D%2C%22ember-paper%22%3A%7B%22insertFontLinks%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Atrue%7D" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link integrity="" rel="stylesheet" href="/assets/vendor.css">
     <link integrity="" rel="stylesheet" href="/assets/personal-portfolio.css">
     <link rel="icon" href="assets/favicon.ico">
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+      
+      !function() {
+        var t = window.driftt = window.drift = window.driftt || [];
+        if (!t.init) {
+          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+        }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('h7f7gi9rxavk');
+      </script>
+      <!-- End of Async Drift Code -->
 
     
   </head>
