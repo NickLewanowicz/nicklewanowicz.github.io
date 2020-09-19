@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 
 export function Main() {
+  const initialNumOfCards = 5
+  const [num, setNum] = useState(initialNumOfCards);
   return (
     <main>
       <hr />
@@ -10,27 +12,16 @@ export function Main() {
           <h2>Projects</h2>
           {/* <p>Section Subheading</p> */}
         </header>
-        {projects.map((project) => {
-          return (
-            <aside>
-              <h4>
-                <a rel="noreferrer" target="_blank" href={project.url}>
-                  {project.name}
-                </a>
-              </h4>
-              <p>
-                <small style={{ color: "black" }}>
-                  <b>tldr;</b> {project.tldr}
-                </small>
-              </p>
-              <br />
-              <p>
-                {project.demo && renderPill("Demo", project.demo, "blue")}
-                {renderPill("Code", project.url, "black")}
-              </p>
-            </aside>
-          );
-        })}
+        {projects.slice(0, num).map((project) => renderCard(project))}
+        {num < projects.length && (
+          <button
+            style={{ backgroundColor: "black", border: "black", padding: "1rem" }}
+            onClick={() => setNum(projects.length)}
+            type="submit"
+          >
+            Show {projects.length - initialNumOfCards} more &rarr;
+          </button>
+        )}
       </section>
       <hr />
       <section>
@@ -43,6 +34,28 @@ export function Main() {
       </section>
     </main>
   );
+
+  function renderCard(project: Project) {
+    return (
+      <aside>
+        <h4>
+          <a rel="noreferrer" target="_blank" href={project.url}>
+            {project.name}
+          </a>
+        </h4>
+        <p>
+          <small style={{ color: "black" }}>
+            <b>tldr;</b> {project.tldr}
+          </small>
+        </p>
+        <br />
+        <p>
+          {project.demo && renderPill("Demo", project.demo, "blue")}
+          {renderPill("Code", project.url, "black")}
+        </p>
+      </aside>
+    );
+  }
 
   function renderPill(content: string, url: string, color: string) {
     return (
