@@ -39,8 +39,9 @@ export function Main() {
     return (
       <aside>
         <h4>
-          <a rel="noreferrer" target="_blank" href={project.url}>
+        <a rel="noreferrer" target="_blank" href={project.url}> 
             {project.name}
+            {" "}<img height={25} alt={project.name} src={project.icon}/>
           </a>
         </h4>
         <p>
@@ -88,7 +89,6 @@ const projects: Project[] = [
   {
     name: "Diabuddy Web/iOS App",
     url: "https://github.com/diabuddy",
-    demo: "http://diabuddy.live",
     tldr:
       "Award Winning Hacking Health 2018 serverless health monitor for children",
     description: "Built using: Emberjs, firebase, and swift",
