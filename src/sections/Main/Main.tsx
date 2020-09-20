@@ -171,8 +171,8 @@ const projects: Project[] = [
   },
   {
     name: "BetterPassword Manager",
-    url: "https://github.com/NickLewanowicz/BetterPassword-HCI",
-    demo: "https://nicklewanowicz.github.io/BetterPassword-HCI/",
+    url: "https://github.com/NickLewanowicz/BetterPassword",
+    demo: "https://nicklewanowicz.github.io/BetterPassword/",
     tldr: "Phrase based password research system",
     description:
       "Makes use of HTML5 Audio API, as well as Canvas contexts to visualize byte frequencies during song playback",
